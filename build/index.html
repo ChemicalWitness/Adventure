@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Проект акселератора Путешествие">
     <title>Путешествие</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <h1 class="visually-hidden">Туристическая фирма LifeTour</h1>
     <header class="header">
       <div class="container">
-        <h1>Привет!</h1>
+        <nav class="header__nav main-nav main-nav--nojs">
+          <div class="main-nav__overlay"></div>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-nav__toggle-icon" width="26" height="26">
+              <use href="./img/sprite.svg#menu-burger"></use>
+            </svg>
+          </button>
+          <a class="main-nav__logo">
+            <svg width="205" height="62">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--header">Туры</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--header">Обучение</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--header">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--header">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--header">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--header">Контакты</a>
+            </li>
+          </ul>
+          <a class="main-nav__phone main-nav__phone--header" href="tel:+78007253232">8 800 725 32 32</a>
+        </nav>
       </div>
     </header>
 

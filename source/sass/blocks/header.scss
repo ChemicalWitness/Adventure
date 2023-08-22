@@ -1,0 +1,24 @@
+.header {
+  background-color: transparent;
+}
+
+.header--main-nav-closed {
+  background-color: transparent;
+}
+
+.header--main-nav-opened {
+  background-color: $color-default-white;
+}
+
+.header__nav {
+  padding-top: 41px;
+  padding-bottom: 80px;
+
+  @include vp-1199 {
+    padding-top: 30px;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+  }
+}
