@@ -1,0 +1,165 @@
+.footer {
+  background-color: $color-default-white;
+  border-top: 1px solid rgba(45, 56, 61, 0.2);
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 205px auto 205px;
+  padding-top: 30px;
+
+  @include vp-1199 {
+    grid-template-columns: 195px 1fr;
+    padding-top: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
+  }
+}
+
+.footer__logo {
+  grid-column: 1/2;
+  justify-self: start;
+
+  @include vp-1199 {
+    justify-self: start;
+  }
+
+  @include vp-767 {
+    grid-row: 1/2;
+    padding-left: 5px;
+  }
+}
+
+.footer__logo svg {
+  @include vp-1199 {
+    width: 118px;
+    height: 34px;
+  }
+
+  @include vp-767 {
+    width: 112px;
+  }
+}
+
+.footer__nav-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  grid-column: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-self: center;
+  gap: 32px;
+
+  @include vp-1199 {
+    padding-top: 5px;
+    align-self: flex-start;
+    gap: 20px;
+  }
+
+  @include vp-767 {
+    padding-top: 8px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    min-width: 290px;
+    justify-self: start;
+    display: block;
+    column-count: 2;
+  }
+}
+
+.footer__nav-link {
+  display: block;
+
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+
+  @include vp-1199 {
+    color: $color-main;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @include vp-767 {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.footer__phone {
+  grid-column: 3/4;
+  align-self: center;
+  justify-self: end;
+
+  display: block;
+
+  font-family: $ff-montserrat;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.footer__social-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 10px;
+
+  @include vp-1199 {
+    grid-column: span 2;
+    margin-top: 28px;
+  }
+
+  @include vp-767 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 20px;
+    justify-content: flex-start;
+    padding-left: 5px;
+  }
+}
+
+.footer__wrapper span {
+  display: block;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+  justify-self: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+
+  @include vp-1199 {
+    grid-column: span 2;
+  }
+
+  @include vp-767 {
+    grid-column: 1/span 2;
+    grid-row: 4/5;
+    margin: 0;
+    margin-top: 20px;
+    justify-self: start;
+    padding-left: 5px;
+  }
+}
