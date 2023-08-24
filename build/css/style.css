@@ -2829,6 +2829,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero__slide-content h2 {
+    max-width: 290px;
     font-size: 30px;
     line-height: 30px;
   }

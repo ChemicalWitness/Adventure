@@ -121,6 +121,7 @@
   }
 
   @include vp-767 {
+    max-width: 290px;
     font-size: 30px;
     line-height: 30px;
   }
