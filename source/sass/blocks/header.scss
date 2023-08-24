@@ -1,21 +1,33 @@
 .header {
   background-color: transparent;
+  position: relative;
+  z-index: 2;
+
+  @include vp-1199 {
+    background-color: $color-default-white;
+  }
 }
 
+
 .header--main-nav-closed {
-  background-color: transparent;
+  @include vp-1199 {
+    background-color: transparent;
+  }
 }
 
 .header--main-nav-opened {
-  background-color: $color-default-white;
+  @include vp-1199 {
+    background-color: $color-default-white;
+  }
 }
 
 .header__nav {
-  padding-top: 41px;
-  padding-bottom: 80px;
+  padding-top: 38px;
+  padding-bottom: 75px;
 
   @include vp-1199 {
     padding-top: 30px;
+    padding-bottom: 90px;
   }
 
   @include vp-767 {

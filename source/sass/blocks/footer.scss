@@ -5,7 +5,7 @@
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: 205px auto 205px;
+  grid-template-columns: 205px auto 175px;
   padding-top: 30px;
 
   @include vp-1199 {
@@ -60,6 +60,7 @@
   @include vp-1199 {
     padding-top: 5px;
     align-self: flex-start;
+    justify-self: end;
     gap: 20px;
   }
 

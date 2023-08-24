@@ -109,10 +109,11 @@
 }
 
 .main-nav__overlay {
+  display: none;
+
   @include vp-1199 {
-    display: none;
     position: absolute;
-    top: 52%;
+    top: 410px;
     left: 0;
     width: 100%;
     height: 48%;
@@ -122,7 +123,7 @@
 
   @include vp-767 {
     position: absolute;
-    top: 46%;
+    top: 335px;
     left: 0;
     width: 100%;
     height: 54%;
@@ -133,6 +134,8 @@
 
 .main-nav__overlay--active {
   display: block;
+  height: 100vh;
+  z-index: 5;
   background-color: rgba(0, 0, 0, 0.5);
   transition: display 0.6s;
 }
@@ -240,16 +243,10 @@
   }
 }
 
-.main-nav--opened {
-  @include vp-1199 {
-    padding-bottom: 40px;
-  }
-}
-
 .main-nav--opened .main-nav__list {
   @include vp-1199 {
     position: absolute;
-    top: 123px;
+    top: 120px;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -258,10 +255,12 @@
     gap: 0;
     padding-bottom: 50px;
     justify-content: start;
+    z-index: 10;
+    visibility: visible;
   }
 
   @include vp-767 {
-    top: 95px;
+    top: 90px;
     left: 0;
     padding-bottom: 30px;
   }

@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import { initMenu, toggleHandlerNav } from './modules/main-nav';
+import { checkWindow, initMenu, toggleHandlerNav } from './modules/main-nav';
 
 // ---------------------------------
 
@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initMenu();
+    checkWindow();
     toggleHandlerNav();
 
   });

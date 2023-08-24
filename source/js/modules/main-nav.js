@@ -5,6 +5,14 @@ const body = document.querySelector('body');
 const mainNavLinks = document.querySelectorAll('.main-nav__link');
 const overlay = document.querySelector('.main-nav__overlay');
 
+export const checkWindow = () => {
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1200) {
+      closeModal();
+    }
+  });
+};
+
 export const initMenu = () => {
   mainNav.classList.remove('main-nav--nojs');
   header.classList.add('header--main-nav-closed');
