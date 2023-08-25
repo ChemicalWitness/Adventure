@@ -1,0 +1,15 @@
+.button {
+  width: 37px;
+  height: 35px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-main-btn;
+
+  cursor: pointer;
+}
+
+.button--right svg {
+  transform: rotate(180deg);
+}

@@ -179,6 +179,78 @@
             <div class="hero__pagination-wrapper"></div>
           </div>
         </section>
+
+        <section class="upcoming-tours">
+          <div class="container">
+            <div class="upcoming-tours__wrapper">
+              <div class="upcoming-tours__title">
+                <h2 data-title="Ближайшие туры">Ближайшие туры</h2>
+                <div class="upcoming-tours__slider-buttons">
+                  <button class="upcoming-tours__button button button--left" type="button">
+                    <svg width="13" height="9">
+                      <use href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <button class="upcoming-tours__button button button--right" type="button">
+                    <svg width="13" height="9">
+                      <use href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="upcoming-tours__slider">
+                <div class="upcoming-tours__slider-wrapper swiper-wrapper">
+                  <div class="upcoming-tours__slider-slide tour-card swiper-slide">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/upcoming-tours-mobile-slider-1" width="290" height="412">
+                      <source media="(max-width:1199px)" srcset="./img/upcoming-tours-tablet-slider-1" width="324" height="412">
+                      <img src="./img/upcoming-tours-desktop-slider-1.png" width="380" height="412" alt="">
+                    </picture>
+                    <div class="tour-card__wrapper">
+                      <div class="tour-card__location">
+                        <svg width="9" height="12">
+                          <use href="./img/sprite.svg#pin"></use>
+                        </svg>
+                        <span>Кавказ</span>
+                      </div>
+                      <div class="tour_card__duration">
+                        <p>
+                          <svg width="20" height="20">
+                            <use href="./img/sprite.svg#sun"></use>
+                          </svg>
+                          <span>4 дня</span>
+                        </p>
+                        <p>
+                          <svg width="20" height="20">
+                            <use href="./img/sprite.svg#duration"></use>
+                          </svg>
+                          <span>3 ночи</span>
+                        </p>
+                      </div>
+                      <h3>Путешествие вокруг Эльбруса</h3>
+                      <div class="tour-card__info">
+                        <div class="tour-card__item">
+                          <span>Сложность:</span>
+                          <svg width="79" height="14">
+                            <use href="./img/sprite.svg#stars"></use>
+                          </svg>
+                        </div>
+                        <div class="tour-card__item">
+                          <span>Даты набора:</span>
+                          <p>12.06-19.06</p>
+                        </div>
+                        <div class="tour-card__item">
+                          <span>Группа:</span>
+                          <p>До 15 чел.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
