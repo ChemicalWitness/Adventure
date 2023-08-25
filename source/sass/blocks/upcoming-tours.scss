@@ -3,7 +3,8 @@
 }
 
 .upcoming-tours__wrapper {
-  padding-top: 100px;
+  padding-top: 120px;
+  padding-bottom: 100px;
 }
 
 .upcoming-tours__title {
@@ -11,7 +12,7 @@
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .upcoming-tours__title h2::after {
@@ -65,4 +66,17 @@
   background: $overlay-card-tour;
   z-index: -1;
   opacity: 0.6;
+}
+
+.upcoming-tours__more {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 200px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
 }

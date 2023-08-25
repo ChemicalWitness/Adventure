@@ -13,8 +13,10 @@
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: $color-main-btn;
+  padding: 3px 0;
   max-width: 108px;
   text-align: center;
+  margin-bottom: 23px;
 }
 
 .tour-card__location span {
@@ -36,12 +38,16 @@
   grid-column: 2/ span 2;
   grid-row: 1/2;
   display: flex;
-  gap: 35px;
-  margin-left: 37px;
+  gap: 40px;
+  margin-left: 35px;
+  margin-bottom: 23px;
 }
 
 .tour_card__duration p {
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
 }
 
 .tour_card__duration span {
@@ -60,14 +66,29 @@
 }
 
 .tour-card__wrapper h3 {
+  position: relative;
   grid-column: 1/span 3;
   grid-row: 2/3;
   margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 17px;
+  max-width: 220px;
 
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: $color-default-white;
+}
+
+.tour-card__wrapper h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background-color: $color-default-white;
+  opacity: 0.2;
 }
 
 .tour-card__info {
@@ -80,6 +101,7 @@
 .tour-card__item {
   display: flex;
   flex-direction: column;
+  gap: 5px 0;
 }
 
 .tour-card__item span {

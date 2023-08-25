@@ -3101,7 +3101,8 @@ button,
 }
 
 .upcoming-tours__wrapper {
-  padding-top: 100px;
+  padding-top: 120px;
+  padding-bottom: 100px;
 }
 
 .upcoming-tours__title {
@@ -3112,7 +3113,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .upcoming-tours__title h2::after {
@@ -3169,6 +3170,18 @@ button,
   opacity: 0.6;
 }
 
+.upcoming-tours__more {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 200px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
 .tour-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3195,8 +3208,10 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   background-color: #0266c1;
+  padding: 3px 0;
   max-width: 108px;
   text-align: center;
+  margin-bottom: 23px;
 }
 
 .tour-card__location span {
@@ -3223,12 +3238,20 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 35px;
-  margin-left: 37px;
+  gap: 40px;
+  margin-left: 35px;
+  margin-bottom: 23px;
 }
 
 .tour_card__duration p {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
 }
 
 .tour_card__duration span {
@@ -3246,6 +3269,7 @@ button,
 }
 
 .tour-card__wrapper h3 {
+  position: relative;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/span 3;
@@ -3253,10 +3277,24 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 17px;
+  max-width: 220px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.tour-card__wrapper h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.2;
 }
 
 .tour-card__info {
@@ -3282,6 +3320,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 5px 0;
 }
 
 .tour-card__item span {
