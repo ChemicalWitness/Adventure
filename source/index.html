@@ -55,6 +55,52 @@
         <section class="hero">
           <div class="hero__slider swiper1">
             <div class="hero__slider-wrapper swiper-wrapper">
+
+              <div class="hero__slide swiper-slide">
+                <div class="hero__slide-background">
+                  <picture>
+                    <source media="(max-width:767px)" srcset="./img/hero-mobile-slider-1.png" width="320" height="568">
+                    <source media="(max-width:1199px)" srcset="./img/hero-tablet-slider-1.png" width="768" height="1024">
+                    <img src="./img/hero-desktop-slider-1.png" width="1440" height="800" alt="">
+                  </picture>
+                </div>
+                <div class="hero__slide-container">
+                  <div class="hero__slide-content-wrapper">
+                    <div class="hero__slide-content">
+                      <h2>Захватывающие вершины Кавказа</h2>
+                      <p>В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                      <a href="#">Смотреть тур</a>
+                    </div>
+                    <div class="hero__slide-additional">
+                      <span>
+                        <svg width="12" height="12">
+                          <use href="./img/sprite.svg#duration"></use>
+                        </svg>
+                        6 дней/5 ночей
+                      </span>
+                      <span>
+                        <svg width="12" height="12">
+                          <use href="./img/sprite.svg#level"></use>
+                        </svg>
+                        Высокая сложность
+                      </span>
+                    </div>
+                    <div class="hero__slide-multiwrapper">
+                      <a class="hero__slide-video-btn" href="https://www.youtube.com/embed/9TZXsZItgdw" target="_blank">
+                        <svg width="12" height="22">
+                          <use href="./img/sprite.svg#play"></use>
+                        </svg>
+                      </a>
+                      <picture>
+                        <source media="(max-width:1199px)" srcset="./img/hero-tablet-video.png" width="442" height="300">
+                        <img src="./img/hero-desktop-video.png" width="482" height="317" alt="">
+                      </picture>
+                      <div class="hero__slide-video" id="video-player"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="hero__slide swiper-slide">
                 <div class="hero__slide-background">
                   <picture>
@@ -84,17 +130,64 @@
                     </span>
                   </div>
                   <div class="hero__slide-multiwrapper">
+                    <a class="hero__slide-video-btn" href="https://www.youtube.com/embed/9TZXsZItgdw" target="_blank">
+                      <svg width="12" height="22">
+                        <use href="./img/sprite.svg#play"></use>
+                      </svg>
+                    </a>
                     <picture>
                       <source media="(max-width:1199px)" srcset="./img/hero-tablet-video.png" width="442" height="300">
                       <img src="./img/hero-desktop-video.png" width="482" height="317" alt="">
                     </picture>
-                    <div class="hero__slide-video">
-                      <a class="hero__slide-video-btn"></a>
-                    </div>
+                    <div class="hero__slide-video" id="video-player"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__slide swiper-slide">
+                <div class="hero__slide-background">
+                  <picture>
+                    <source media="(max-width:767px)" srcset="./img/hero-mobile-slider-1.png" width="320" height="568">
+                    <source media="(max-width:1199px)" srcset="./img/hero-tablet-slider-1.png" width="768" height="1024">
+                    <img src="./img/hero-desktop-slider-1.png" width="1440" height="800" alt="">
+                  </picture>
+                </div>
+                <div class="hero__slide-content-wrapper">
+                  <div class="hero__slide-content">
+                    <h2>Захватывающие вершины Кавказа</h2>
+                    <p>В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                    <a href="#">Смотреть тур</a>
+                  </div>
+                  <div class="hero__slide-additional">
+                    <span>
+                      <svg width="12" height="12">
+                        <use href="./img/sprite.svg#duration"></use>
+                      </svg>
+                      6 дней/5 ночей
+                    </span>
+                    <span>
+                      <svg width="12" height="12">
+                        <use href="./img/sprite.svg#level"></use>
+                      </svg>
+                      Высокая сложность
+                    </span>
+                  </div>
+                  <div class="hero__slide-multiwrapper">
+                    <a class="hero__slide-video-btn" href="https://www.youtube.com/embed/9TZXsZItgdw" target="_blank">
+                      <svg width="12" height="22">
+                        <use href="./img/sprite.svg#play"></use>
+                      </svg>
+                    </a>
+                    <picture>
+                      <source media="(max-width:1199px)" srcset="./img/hero-tablet-video.png" width="442" height="300">
+                      <img src="./img/hero-desktop-video.png" width="482" height="317" alt="">
+                    </picture>
+                    <div class="hero__slide-video" id="video-player"></div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="hero__pagination-wrapper"></div>
           </div>
         </section>
       </main>

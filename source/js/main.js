@@ -2,6 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import { checkWindow, initMenu, toggleHandlerNav } from './modules/main-nav';
+import { findVideo } from './modules/video';
+import { heroSlider } from './modules/hero';
 
 // ---------------------------------
 
@@ -11,6 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  findVideo();
+
 
   // Modules
   // ---------------------------------
@@ -22,10 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    initMenu();
-    checkWindow();
     toggleHandlerNav();
-
+    checkWindow();
+    initMenu();
+    heroSlider();
   });
 });
 
