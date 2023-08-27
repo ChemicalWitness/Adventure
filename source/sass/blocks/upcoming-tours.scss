@@ -5,6 +5,19 @@
 .upcoming-tours__wrapper {
   padding-top: 120px;
   padding-bottom: 100px;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @include vp-1199 {
+    padding-top: 80px;
+    padding-bottom: 85px;
+    max-width: 674px;
+  }
+
+  @include vp-767 {
+    padding: 60px 15px;
+    max-width: fit-content;
+  }
 }
 
 .upcoming-tours__title {
@@ -13,6 +26,15 @@
   justify-content: space-between;
 
   margin-bottom: 55px;
+
+  @include vp-1199 {
+    margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 28px;
+    align-items: center;
+  }
 }
 
 .upcoming-tours__title h2::after {
@@ -26,6 +48,17 @@
   font-weight: 800;
   color: $color-main;
   opacity: 0.03;
+
+  @include vp-1199 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    bottom: 20px;
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .upcoming-tours__title h2 {
@@ -35,6 +68,19 @@
   font-size: 35px;
   line-height: 35px;
   font-weight: 800;
+
+  @include vp-1199 {
+    margin-top: 5px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    padding-right: 50px;
+
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .upcoming-tours__slider-buttons {
@@ -42,11 +88,30 @@
   gap: 4px;
 }
 
+.upcoming-tours__slider {
+  padding: 0 5px;
+
+  @include vp-767 {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .upcoming-tours__slider-slide {
   position: relative;
   width: 380px;
   min-height: 412px;
   padding: 28px 20px;
+
+  @include vp-1199 {
+    width: 324px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .upcoming-tours__slider-slide img {
@@ -54,6 +119,12 @@
   top: 0;
   left: 0;
   z-index: -2;
+
+  @include vp-767 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .upcoming-tours__slider-slide::after {
@@ -69,14 +140,27 @@
 }
 
 .upcoming-tours__more {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   margin: 0 auto;
   margin-top: 50px;
-  width: 200px;
 
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 0.64px;
   text-transform: uppercase;
+
+  @include vp-1199 {
+    margin-top: 53px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.54px;
+    margin-top: 30px;
+  }
 }
