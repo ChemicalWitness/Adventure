@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import { checkWindow, initMenu, toggleHandlerNav } from './modules/main-nav';
 import { findVideo } from './modules/video';
 import { heroSlider } from './modules/hero';
+import { upcomingToursSlider } from './modules/upcoming-tours-slider';
 
 // ---------------------------------
 
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     checkWindow();
     initMenu();
     heroSlider();
+    upcomingToursSlider();
   });
 });
 

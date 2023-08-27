@@ -7,6 +7,7 @@
   padding-bottom: 100px;
   margin: 0 auto;
   max-width: 1200px;
+  overflow-x: hidden;
 
   @include vp-1199 {
     padding-top: 80px;
@@ -114,30 +115,30 @@
   }
 }
 
-.upcoming-tours__slider-slide img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
+// .upcoming-tours__slider-slide img {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: -2;
 
-  @include vp-767 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
+//   @include vp-767 {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+// }
 
-.upcoming-tours__slider-slide::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: $overlay-card-tour;
-  z-index: -1;
-  opacity: 0.6;
-}
+// .upcoming-tours__slider-slide::after {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   background: $overlay-card-tour;
+//   z-index: -1;
+//   opacity: 0.6;
+// }
 
 .upcoming-tours__more {
   display: flex;
