@@ -181,183 +181,255 @@
         </section>
 
         <section class="upcoming-tours">
-          <!-- <div class="container"> -->
-            <div class="upcoming-tours__wrapper">
-              <div class="upcoming-tours__title">
-                <h2 data-title="Ближайшие туры">Ближайшие туры</h2>
-                <div class="upcoming-tours__slider-buttons">
-                  <button class="upcoming-tours__button upcoming-tours__button--prev button button--left" type="button">
-                    <svg width="13" height="9">
-                      <use href="./img/sprite.svg#arrow"></use>
-                    </svg>
-                  </button>
-                  <button class="upcoming-tours__button upcoming-tours__button--next button button--right" type="button">
-                    <svg width="13" height="9">
-                      <use href="./img/sprite.svg#arrow"></use>
-                    </svg>
-                  </button>
-                </div>
+          <div class="upcoming-tours__wrapper">
+            <div class="upcoming-tours__title">
+              <h2 data-title="Ближайшие туры">Ближайшие туры</h2>
+              <div class="upcoming-tours__slider-buttons">
+                <button class="upcoming-tours__button upcoming-tours__button--prev button button--left" type="button">
+                  <svg width="13" height="9">
+                    <use href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button class="upcoming-tours__button upcoming-tours__button--next button button--right" type="button">
+                  <svg width="13" height="9">
+                    <use href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
               </div>
-              <div class="upcoming-tours__slider swiper2">
-                <div class="upcoming-tours__slider-wrapper swiper-wrapper">
-
-                  <div class="upcoming-tours__slider-slide tour-card swiper-slide">
-                    <div class="tour-card__image">
-                      <picture>
-                        <source media="(max-width:767px)" srcset="./img/upcoming-tours-mobile-slider-1.png" width="290" height="412">
-                        <source media="(max-width:1199px)" srcset="./img/upcoming-tours-tablet-slider-1.png" width="324" height="412">
-                        <img src="./img/upcoming-tours-desktop-slider-1.png" width="380" height="412" alt="">
-                      </picture>
-                    </div>
-                    <div class="tour-card__wrapper">
-                      <div class="tour-card__location">
-                        <svg width="9" height="12">
-                          <use href="./img/sprite.svg#pin"></use>
-                        </svg>
-                        <span>Кавказ</span>
-                      </div>
-                      <div class="tour_card__duration">
-                        <p>
-                          <svg width="20" height="20">
-                            <use href="./img/sprite.svg#sun"></use>
-                          </svg>
-                          <span>4 дня</span>
-                        </p>
-                        <p>
-                          <svg width="20" height="20">
-                            <use href="./img/sprite.svg#duration"></use>
-                          </svg>
-                          <span>3 ночи</span>
-                        </p>
-                      </div>
-                      <h3>Путешествие вокруг Эльбруса</h3>
-                      <div class="tour-card__info">
-                        <div class="tour-card__item">
-                          <span>Сложность:</span>
-                          <svg width="79" height="14">
-                            <use href="./img/sprite.svg#stars"></use>
-                          </svg>
-                        </div>
-                        <div class="tour-card__item">
-                          <span>Даты набора:</span>
-                          <p>12.06-19.06</p>
-                        </div>
-                        <div class="tour-card__item">
-                          <span>Группа:</span>
-                          <p>до 15 чел.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="upcoming-tours__slider-slide tour-card swiper-slide">
-                    <div class="tour-card__image">
-                      <picture>
-                        <source media="(max-width:767px)" srcset="./img/upcoming-tours-mobile-slider-2.png" width="290" height="412">
-                        <source media="(max-width:1199px)" srcset="./img/upcoming-tours-tablet-slider-2.png" width="324" height="412">
-                        <img src="./img/upcoming-tours-desktop-slider-2.png" width="380" height="412" alt="">
-                      </picture>
-                    </div>
-                    <div class="tour-card__wrapper">
-                      <div class="tour-card__location">
-                        <svg width="9" height="12">
-                          <use href="./img/sprite.svg#pin"></use>
-                        </svg>
-                        <span>Алтай</span>
-                      </div>
-                      <div class="tour_card__duration">
-                        <p>
-                          <svg width="20" height="20">
-                            <use href="./img/sprite.svg#sun"></use>
-                          </svg>
-                          <span>14 дней</span>
-                        </p>
-                        <p>
-                          <svg width="20" height="20">
-                            <use href="./img/sprite.svg#duration"></use>
-                          </svg>
-                          <span>13 ночей</span>
-                        </p>
-                      </div>
-                      <h3>Путь к подножию Белухи</h3>
-                      <div class="tour-card__info">
-                        <div class="tour-card__item">
-                          <span>Сложность:</span>
-                          <svg width="79" height="14">
-                            <use href="./img/sprite.svg#stars-2"></use>
-                          </svg>
-                        </div>
-                        <div class="tour-card__item">
-                          <span>Даты набора:</span>
-                          <p>14.06-23.06</p>
-                        </div>
-                        <div class="tour-card__item">
-                          <span>Группа:</span>
-                          <p>до 25 чел.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="upcoming-tours__slider-slide tour-card swiper-slide">
-                    <div class="tour-card__image">
-                      <picture>
-                        <source media="(max-width:767px)" srcset="./img/upcoming-tours-mobile-slider-3.png" width="290" height="412">
-                        <source media="(max-width:1199px)" srcset="./img/upcoming-tours-tablet-slider-3.png" width="324" height="412">
-                        <img src="./img/upcoming-tours-desktop-slider-3.png" width="380" height="412" alt="">
-                      </picture>
-                    </div>
-                    <div class="tour-card__wrapper">
-                      <div class="tour-card__location">
-                        <svg width="9" height="12">
-                          <use href="./img/sprite.svg#pin"></use>
-                        </svg>
-                        <span>Адыгея</span>
-                      </div>
-                      <div class="tour_card__duration">
-                        <p>
-                          <svg width="20" height="20">
-                            <use href="./img/sprite.svg#sun"></use>
-                          </svg>
-                          <span>7 дней</span>
-                        </p>
-                        <p>
-                          <svg width="20" height="20">
-                            <use href="./img/sprite.svg#duration"></use>
-                          </svg>
-                          <span>6 ночей</span>
-                        </p>
-                      </div>
-                      <h3>Через Фишт к Черному морю</h3>
-                      <div class="tour-card__info">
-                        <div class="tour-card__item">
-                          <span>Сложность:</span>
-                          <svg width="79" height="14">
-                            <use href="./img/sprite.svg#stars-3"></use>
-                          </svg>
-                        </div>
-                        <div class="tour-card__item">
-                          <span>Даты набора:</span>
-                          <p>15.07-19.07</p>
-                        </div>
-                        <div class="tour-card__item">
-                          <span>Группа:</span>
-                          <p>до 22 чел.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <a class="upcoming-tours__more" href="#">
-                <span>Показать все туры</span>
-                <svg width="9" height="14">
-                  <use href="./img/sprite.svg#arrow-right"></use>
-                </svg>
-              </a>
             </div>
-          <!-- </div> -->
+            <div class="upcoming-tours__slider swiper2">
+              <div class="upcoming-tours__slider-wrapper swiper-wrapper">
+
+                <div class="upcoming-tours__slider-slide tour-card swiper-slide">
+                  <div class="tour-card__image">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/upcoming-tours-mobile-slider-1.png" width="290" height="412">
+                      <source media="(max-width:1199px)" srcset="./img/upcoming-tours-tablet-slider-1.png" width="324" height="412">
+                      <img src="./img/upcoming-tours-desktop-slider-1.png" width="380" height="412" alt="">
+                    </picture>
+                  </div>
+                  <div class="tour-card__wrapper">
+                    <div class="tour-card__location">
+                      <svg width="9" height="12">
+                        <use href="./img/sprite.svg#pin"></use>
+                      </svg>
+                      <span>Кавказ</span>
+                    </div>
+                    <div class="tour_card__duration">
+                      <p>
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>4 дня</span>
+                      </p>
+                      <p>
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#duration"></use>
+                        </svg>
+                        <span>3 ночи</span>
+                      </p>
+                    </div>
+                    <h3>Путешествие вокруг Эльбруса</h3>
+                    <div class="tour-card__info">
+                      <div class="tour-card__item">
+                        <span>Сложность:</span>
+                        <svg width="79" height="14">
+                          <use href="./img/sprite.svg#stars"></use>
+                        </svg>
+                      </div>
+                      <div class="tour-card__item">
+                        <span>Даты набора:</span>
+                        <p>12.06-19.06</p>
+                      </div>
+                      <div class="tour-card__item">
+                        <span>Группа:</span>
+                        <p>до 15 чел.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="upcoming-tours__slider-slide tour-card swiper-slide">
+                  <div class="tour-card__image">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/upcoming-tours-mobile-slider-2.png" width="290" height="412">
+                      <source media="(max-width:1199px)" srcset="./img/upcoming-tours-tablet-slider-2.png" width="324" height="412">
+                      <img src="./img/upcoming-tours-desktop-slider-2.png" width="380" height="412" alt="">
+                    </picture>
+                  </div>
+                  <div class="tour-card__wrapper">
+                    <div class="tour-card__location">
+                      <svg width="9" height="12">
+                        <use href="./img/sprite.svg#pin"></use>
+                      </svg>
+                      <span>Алтай</span>
+                    </div>
+                    <div class="tour_card__duration">
+                      <p>
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>14 дней</span>
+                      </p>
+                      <p>
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#duration"></use>
+                        </svg>
+                        <span>13 ночей</span>
+                      </p>
+                    </div>
+                    <h3>Путь к подножию Белухи</h3>
+                    <div class="tour-card__info">
+                      <div class="tour-card__item">
+                        <span>Сложность:</span>
+                        <svg width="79" height="14">
+                          <use href="./img/sprite.svg#stars-2"></use>
+                        </svg>
+                      </div>
+                      <div class="tour-card__item">
+                        <span>Даты набора:</span>
+                        <p>14.06-23.06</p>
+                      </div>
+                      <div class="tour-card__item">
+                        <span>Группа:</span>
+                        <p>до 25 чел.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="upcoming-tours__slider-slide tour-card swiper-slide">
+                  <div class="tour-card__image">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/upcoming-tours-mobile-slider-3.png" width="290" height="412">
+                      <source media="(max-width:1199px)" srcset="./img/upcoming-tours-tablet-slider-3.png" width="324" height="412">
+                      <img src="./img/upcoming-tours-desktop-slider-3.png" width="380" height="412" alt="">
+                    </picture>
+                  </div>
+                  <div class="tour-card__wrapper">
+                    <div class="tour-card__location">
+                      <svg width="9" height="12">
+                        <use href="./img/sprite.svg#pin"></use>
+                      </svg>
+                      <span>Адыгея</span>
+                    </div>
+                    <div class="tour_card__duration">
+                      <p>
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>7 дней</span>
+                      </p>
+                      <p>
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#duration"></use>
+                        </svg>
+                        <span>6 ночей</span>
+                      </p>
+                    </div>
+                    <h3>Через Фишт к Черному морю</h3>
+                    <div class="tour-card__info">
+                      <div class="tour-card__item">
+                        <span>Сложность:</span>
+                        <svg width="79" height="14">
+                          <use href="./img/sprite.svg#stars-3"></use>
+                        </svg>
+                      </div>
+                      <div class="tour-card__item">
+                        <span>Даты набора:</span>
+                        <p>15.07-19.07</p>
+                      </div>
+                      <div class="tour-card__item">
+                        <span>Группа:</span>
+                        <p>до 22 чел.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <a class="upcoming-tours__more" href="#">
+              <span>Показать все туры</span>
+              <svg width="9" height="14">
+                <use href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+        <section class="learning">
+          <div class="container">
+            <div class="learning__title">
+              <h2>Обучение</h2>
+              <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+            </div>
+            <div class="learning__instructors-wrapper">
+              <h3>Наши инструкторы</h3>
+              <div class="learning__slider-buttons">
+                <button class="learning__button learning__button--prev button button--left" type="button">
+                  <svg width="13" height="9">
+                    <use href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button class="learning__button learning__button--next button button--right" type="button">
+                  <svg width="13" height="9">
+                    <use href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="learning__instructors-slider">
+              <div class="learning__instructors-slider-wrapper swiper-wrapper">
+                <div class="learning__instructors-slider-slide instructor-card swiper-slide">
+                  <div class="instructor-card__image">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/instructor-1-mobile.png" width="250" height="212">
+                      <source media="(max-width:1199px)" srcset="./img/instructor-1-tablet.png" width="176" height="212">
+                      <img src="./img/instructor-1-desktop.png" width="238" height="212" alt="">
+                    </picture>
+                  </div>
+                  <div class="instructor-card__title-wrapper">
+                    <h4>Александр Прокофьев</h4>
+                    <a class="instructor-card__link" href="#" aria-label="Инструктор в ВК">
+                      <svg width="14" height="8">
+                        <use href="./img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>Строгий и внимательный инструктор, веселый и общительный человек. Любит природу.</p>
+                </div>
+              </div>
+            </div>
+            <div class="learning__about">
+              <h3>Процесс обучения</h3>
+              <ul class="learning__about-list">
+                <li class="learning__about-list-item">
+                  <svg width="25" height="25">
+                    <use href="./img/sprite.svg#map"></use>
+                  </svg>
+                  <span>Изучение спортивного туристского движения</span>
+                </li>
+                <li class="learning__about-list-item">
+                  <svg width="24" height="24">
+                    <use href="./img/sprite.svg#boots"></use>
+                  </svg>
+                  <span>Подготовка и техническое снаряжение в походах</span>
+                </li>
+                <li class="learning__about-list-item">
+                  <svg width="23" height="23">
+                    <use href="./img/sprite.svg#pine-tree"></use>
+                  </svg>
+                  <span>Лекции по окружающей среде, экологии и гигиене </span>
+                </li>
+                <li class="learning__about-list-item">
+                  <svg width="25" height="25">
+                    <use href="./img/sprite.svg#mountain"></use>
+                  </svg>
+                  <span>Разъяснение сложности горных препятствий </span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
 
