@@ -5,6 +5,7 @@ import { checkWindow, initMenu, toggleHandlerNav } from './modules/main-nav';
 import { findVideo } from './modules/video';
 import { heroSlider } from './modules/hero';
 import { upcomingToursSlider } from './modules/upcoming-tours-slider';
+import { instructorsSlider } from './modules/instructors-slider';
 
 // ---------------------------------
 
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initMenu();
     heroSlider();
     upcomingToursSlider();
+    instructorsSlider();
   });
 });
 
