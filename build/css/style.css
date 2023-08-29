@@ -4088,6 +4088,7 @@ button,
   margin: 0 auto;
   margin-bottom: 30px;
   gap: 30px;
+  overflow-x: hidden;
 }
 @media (max-width: 1199px) {
   .about__wrapper {
@@ -4116,6 +4117,11 @@ button,
     min-height: 402px;
   }
 }
+@media (max-width: 767px) {
+  .about__image {
+    max-width: 572px;
+  }
+}
 
 .about__image img {
   position: absolute;
@@ -4134,7 +4140,8 @@ button,
 @media (max-width: 767px) {
   .about__image img {
     top: -7px;
-    right: -112px;
+    left: auto;
+    right: -117px;
   }
 }
 

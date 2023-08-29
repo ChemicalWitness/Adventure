@@ -8,6 +8,7 @@
   margin: 0 auto;
   margin-bottom: 30px;
   gap: 30px;
+  overflow-x: hidden;
 
   @include vp-1199 {
     margin-bottom: 70px;
@@ -27,6 +28,10 @@
   @include vp-1199 {
     min-height: 402px;
   }
+
+  @include vp-767 {
+    max-width: 572px;
+  }
 }
 
 .about__image img {
@@ -44,7 +49,8 @@
 
   @include vp-767 {
     top: -7px;
-    right: -112px;
+    left: auto;
+    right: -117px;
   }
 }
 
