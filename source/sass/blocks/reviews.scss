@@ -78,13 +78,15 @@
 }
 
 .reviews__slider {
-  margin-bottom: 112px;
+  margin-bottom: 135px;
 
   @include vp-1199 {
+    margin-bottom: 90px;
     padding-left: 45px;
   }
 
   @include vp-767 {
+    margin-bottom: 32px;
     padding: 0 15px;
   }
 }
