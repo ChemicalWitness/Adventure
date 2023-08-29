@@ -6,6 +6,7 @@ import { findVideo } from './modules/video';
 import { heroSlider } from './modules/hero';
 import { upcomingToursSlider } from './modules/upcoming-tours-slider';
 import { instructorsSlider } from './modules/instructors-slider';
+import { reviewsSlider } from './modules/reviews-slider';
 
 // ---------------------------------
 
@@ -34,6 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     heroSlider();
     upcomingToursSlider();
     instructorsSlider();
+    reviewsSlider();
   });
 });
 

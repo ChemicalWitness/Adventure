@@ -1,0 +1,115 @@
+.reviews {
+  background-color: $color-default-white;
+  overflow-x: hidden;
+}
+
+.reviews__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews__title {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    padding: 0 45px;
+    margin-bottom: 15px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+}
+
+.reviews__title h2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+
+  @include vp-1199 {
+
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.reviews__title h2::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 800;
+  color: $color-main;
+  opacity: 0.03;
+
+  @include vp-1199 {
+    bottom: 10px;
+
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    bottom: 13px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.reviews__slider-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.reviews__slider {
+  margin-bottom: 112px;
+
+  @include vp-1199 {
+    padding-left: 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.reviews__slider-slide {
+  padding: 20px;
+  padding-right: 40px;
+  display: grid;
+  grid-template-columns: 258px 1fr;
+  gap: 30px;
+  max-width: 790px;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+
+  @include vp-1199 {
+    grid-template-columns: 186px 1fr;
+    padding-right: 30px;
+    max-width: 560px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: none;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    gap: 13px;
+    max-width: none;
+  }
+}
