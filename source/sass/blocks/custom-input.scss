@@ -3,11 +3,10 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  width: 100%;
+  padding: 0;
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
     width: 100%;
   }
 
@@ -21,23 +20,37 @@
       flex-direction: column;
     }
 
-    input,
-    textarea {
+    input {
       flex-grow: 1;
-      max-width: 300px;
+      max-width: 340px;
       min-height: 48px;
       margin-left: auto;
-      padding: 10px;
+      padding: 20px 30px;
+      border: 1px solid rgba(2, 102, 193, 0.1);
 
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      font-size: 16px;
+      line-height: 16px;
+
       outline: none;
 
       transition: border 0.3s ease;
 
+      @media (max-width: 1199px) {
+        max-width: none;
+        width: 100%;
+        padding: 15px;
+
+        font-size: 14px;
+        line-height: 14px;
+      }
+
       @media screen and (max-width: 767px) {
         max-width: unset;
         width: 100%;
+      }
+
+      &::placeholder {
+        opacity: 0.5;
       }
 
       &:hover {

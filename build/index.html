@@ -779,6 +779,39 @@
             </div>
           </div>
         </section>
+
+        <section class="questions">
+          <div class="questions__wrapper">
+            <div class="questions__image-background">
+              <picture>
+                <source media="(max-width:767px)" srcset="./img/questions-mobile.png" width="320" height="621">
+                <source media="(max-width:1199px)" srcset="./img/questions-tablet.png" width="768" height="679">
+                <img src="./img/questions-desktop.png" width="1440" height="800" alt="">
+              </picture>
+            </div>
+            <div class="questions__title">
+              <h2>Остались вопросы?</h2>
+              <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+            </div>
+            <div class="questions__form-wrapper">
+              <form action="https://echo.htmlacademy.ru/." id="form" method="get" novalidate>
+                <div class="questions__form-inner-wrapper">
+                  <div class="custom-input">
+                    <label>
+                      <input type="text" name="username" id="username" placeholder="Как к вам обращаться?">
+                    </label>
+                  </div>
+                  <div class="custom-input">
+                    <label>
+                      <input type="tel" name="phone" id="phone" placeholder="Телефон">
+                    </label>
+                  </div>
+                  <button class="questions__form-button" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
