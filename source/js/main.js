@@ -9,6 +9,7 @@ import { instructorsSlider } from './modules/instructors-slider';
 import { reviewsSlider } from './modules/reviews-slider';
 import { benefitsSlider } from './modules/benefits-slider';
 import { gallerySlider } from './modules/gallery-slider';
+import { mapInit } from './modules/map';
 
 // ---------------------------------
 
@@ -40,6 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
     reviewsSlider();
     benefitsSlider();
     gallerySlider();
+    mapInit();
   });
 });
 
