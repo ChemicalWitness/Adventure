@@ -1,60 +1,28 @@
 const Swiper = window.Swiper;
 const slider = document.querySelector('.benefits__slider');
+const breakpointDesktop = window.innerWidth;
+let swiper;
 
-export const benefitsSlider = () =>
-  window.matchMedia('(min-width: 1200px').matches && slider &&
-  new Swiper('.benefits__slider', {
-    navigation: {
-      nextEl: '.benefits__button--next',
-      prevEl: '.benefits__button--prev',
-    },
-    simulateTouch: false,
-    breakpoints: {
-      768: {
-        initialSlide: 0,
-        slidesPerView: 2,
-        spaceBetween: 0,
+export const benefitsSlider = () => {
+  if (breakpointDesktop >= 1200) {
+    swiper = slider && new Swiper('.benefits__slider', {
+      navigation: {
+        nextEl: '.benefits__button--next',
+        prevEl: '.benefits__button--prev',
       },
-      1200: {
-        initialSlide: 1,
-        slidesPerView: 3,
-        spaceBetween: 30,
+      simulateTouch: false,
+      breakpoints: {
+        1200: {
+          initialSlide: 1,
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
       },
-    },
-    loop: true,
-  });
-
-
-// export const benefitsSlider = () => {
-//   window.addEventListener('resize', () => {
-//     if (window.innerWidth >= 1200) {
-//       initSlider();
-//     } else {
-//       destroySlider();
-//     }
-//   });
-// };
-
-
-// const initSlider = () => {
-//   slider &&
-//   new Swiper('.benefits__slider', {
-//     navigation: {
-//       nextEl: '.benefits__button--next',
-//       prevEl: '.benefits__button--prev',
-//     },
-//     simulateTouch: false,
-//     breakpoints: {
-//       1200: {
-//         initialSlide: 1,
-//         slidesPerView: 3,
-//         spaceBetween: 30,
-//       },
-//     },
-//     loop: true,
-//   });
-// }
-
-// const destroySlider = () => {
-//   Swiper.disable();
-// };
+      loop: true,
+    });
+  } else {
+    if (swiper) {
+      swiper.destroy(true, true);
+    }
+  }
+};

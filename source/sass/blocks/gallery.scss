@@ -1,0 +1,169 @@
+.gallery {
+  background-color: $color-default-white;
+  overflow-x: hidden;
+}
+
+.gallery__wrapper {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 1200px;
+
+  @include vp-1199 {
+    padding: 0 45px;
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.gallery__wrapper h2 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+
+  @include vp-1199 {
+
+    margin-bottom: 23px;
+
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.gallery__wrapper h2::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 800;
+  color: $color-main;
+  opacity: 0.03;
+
+  @include vp-1199 {
+    bottom: 0;
+
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    bottom: 0;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.gallery__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-767 {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 15px;
+  }
+}
+
+.gallery__text p {
+  margin: 0;
+  max-width: 693px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+    padding-right: 200px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 0;
+  }
+}
+
+.gallery__slider-button {
+  display: flex;
+  gap: 6px;
+
+  @include vp-767 {
+    justify-self: end;
+  }
+}
+
+.gallery__slider {
+  margin: 0 auto;
+}
+
+.gallery__slider-slide {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6px;
+  width: 578px;
+
+  @include vp-767 {
+    width: 320px;
+    height: 260px;
+    gap: 3px;
+  }
+}
+
+.gallery__main-picture {
+  @include vp-767 {
+    width: 159px;
+    height: 259px;
+  }
+}
+
+.gallery__main-picture img {
+  display: block;
+
+  @include vp-767 {
+    width: 159px;
+    height: 259px;
+  }
+}
+
+.gallery__picture {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @include vp-767 {
+    gap: 3px;
+  }
+}
+
+.gallery__picture picture:not(:first-of-type) > img {
+  @include vp-767 {
+    width: 172px;
+    height: 153px;
+  }
+}
+
+.gallery__picture picture:first-of-type > img {
+  @include vp-767 {
+    width: 172px;
+    height: 103px;
+  }
+}

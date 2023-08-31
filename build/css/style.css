@@ -4483,6 +4483,7 @@ button,
 
 .benefits__wrapper {
   margin: 0 auto;
+  margin-bottom: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4497,11 +4498,13 @@ button,
 @media (max-width: 1199px) {
   .benefits__wrapper {
     padding: 0 45px;
+    margin-bottom: 85px;
   }
 }
 @media (max-width: 767px) {
   .benefits__wrapper {
     padding: 0 15px;
+    margin-bottom: 70px;
   }
 }
 
@@ -4598,7 +4601,7 @@ button,
   .benefits__slider-wrapper {
     max-width: none;
     width: 100%;
-    gap: 15px;
+    gap: 12px;
   }
 }
 
@@ -4624,6 +4627,7 @@ button,
   .benefits__slider-slide {
     width: 324px;
     padding: 30px 20px;
+    min-height: 0;
   }
 }
 @media (max-width: 767px) {
@@ -4708,6 +4712,201 @@ button,
   .benefits-card__text p {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+
+.gallery {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.gallery__wrapper {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 1200px;
+}
+@media (max-width: 1199px) {
+  .gallery__wrapper {
+    padding: 0 45px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .gallery__wrapper {
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.gallery__wrapper h2 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+}
+@media (max-width: 1199px) {
+  .gallery__wrapper h2 {
+    margin-bottom: 23px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .gallery__wrapper h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.gallery__wrapper h2::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 800;
+  color: #2d383f;
+  opacity: 0.03;
+}
+@media (max-width: 1199px) {
+  .gallery__wrapper h2::after {
+    bottom: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .gallery__wrapper h2::after {
+    bottom: 0;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.gallery__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .gallery__text {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    gap: 15px;
+  }
+}
+
+.gallery__text p {
+  margin: 0;
+  max-width: 693px;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1199px) {
+  .gallery__text p {
+    font-size: 14px;
+    line-height: 22px;
+    padding-right: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .gallery__text p {
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 0;
+  }
+}
+
+.gallery__slider-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+@media (max-width: 767px) {
+  .gallery__slider-button {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}
+
+.gallery__slider {
+  margin: 0 auto;
+}
+
+.gallery__slider-slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  gap: 6px;
+  width: 578px;
+}
+@media (max-width: 767px) {
+  .gallery__slider-slide {
+    width: 320px;
+    height: 260px;
+    gap: 3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery__main-picture {
+    width: 159px;
+    height: 259px;
+  }
+}
+
+.gallery__main-picture img {
+  display: block;
+}
+@media (max-width: 767px) {
+  .gallery__main-picture img {
+    width: 159px;
+    height: 259px;
+  }
+}
+
+.gallery__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+@media (max-width: 767px) {
+  .gallery__picture {
+    gap: 3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery__picture picture:not(:first-of-type) > img {
+    width: 172px;
+    height: 153px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery__picture picture:first-of-type > img {
+    width: 172px;
+    height: 103px;
   }
 }
 
