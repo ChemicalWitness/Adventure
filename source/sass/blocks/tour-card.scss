@@ -70,7 +70,7 @@
   fill: $color-default-white;
 }
 
-.tour_card__duration {
+.tour-card__duration {
   grid-column: 2/ span 2;
   grid-row: 1/2;
   display: flex;
@@ -91,7 +91,7 @@
   }
 }
 
-.tour_card__duration p {
+.tour-card__duration p {
   margin: 0;
   display: flex;
   align-items: center;
@@ -102,7 +102,7 @@
   }
 }
 
-.tour_card__duration span {
+.tour-card__duration span {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -113,7 +113,7 @@
   color: $color-default-white;
 }
 
-.tour_card__duration svg {
+.tour-card__duration svg {
   fill: $color-default-white;
 }
 

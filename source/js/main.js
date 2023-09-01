@@ -10,6 +10,7 @@ import { reviewsSlider } from './modules/reviews-slider';
 import { benefitsSlider } from './modules/benefits-slider';
 import { gallerySlider } from './modules/gallery-slider';
 import { mapInit } from './modules/map';
+import { initAudio } from './modules/audio';
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  toggleHandlerNav();
   findVideo();
 
 
@@ -32,10 +34,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    toggleHandlerNav();
     checkWindow();
     initMenu();
     heroSlider();
+    initAudio();
     upcomingToursSlider();
     instructorsSlider();
     reviewsSlider();
