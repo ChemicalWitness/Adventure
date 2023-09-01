@@ -10,14 +10,14 @@
   right: 0;
   width: 840px;
   height: 280px;
-  background-image: url("../img/clouds-about.png");
+  background-image: url("../img/clouds-about.webp");
   background-repeat: no-repeat;
   background-position-x: 120px;
   background-size: 87% 100%;
   transform: translateY(-3715px);
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/clouds-about@2x.png");
+    background-image: url("../img/clouds-about@2x.webp");
   }
 
   @include vp-1199 {

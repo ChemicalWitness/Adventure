@@ -10,14 +10,14 @@
   z-index: -1;
   width: 788px;
   height: 263px;
-  background-image: url("../img/clouds-benefits.png");
+  background-image: url("../img/clouds-benefits.webp");
   background-repeat: no-repeat;
   background-position-x: 150px;
   background-size: 87% 100%;
   transform: translateY(-2605px);
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/clouds-benefits@2x.png");
+    background-image: url("../img/clouds-benefits@2x.webp");
   }
 
   @include vp-1199 {

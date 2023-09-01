@@ -10,13 +10,13 @@
   z-index: -1;
   width: 1170px;
   height: 391px;
-  background-image: url("../img/clouds-reviews.png");
+  background-image: url("../img/clouds-reviews.webp");
   background-repeat: no-repeat;
   background-size: 65% 100%;
   transform: translateY(-2650px);
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/clouds-reviews@2x.png");
+    background-image: url("../img/clouds-reviews@2x.webp");
   }
 
   @include vp-1199 {
