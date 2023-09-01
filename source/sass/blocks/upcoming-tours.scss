@@ -44,6 +44,10 @@
     height: 595px;
     top: 225px;
     background-size: 50% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decorative-clouds-mobile@2x.png");
+    }
   }
 }
 

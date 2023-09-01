@@ -3172,6 +3172,11 @@ button,
     background-size: 50% auto;
   }
 }
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .upcoming-tours::before {
+    background-image: url("../img/decorative-clouds-mobile@2x.png");
+  }
+}
 
 .upcoming-tours::after {
   position: absolute;
