@@ -1,6 +1,27 @@
 .reviews {
-  background-color: $color-default-white;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.reviews::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 1170px;
+  height: 391px;
+  background-image: url("../img/clouds-reviews.png");
+  background-repeat: no-repeat;
+  background-size: 65% 100%;
+  transform: translateY(-2650px);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/clouds-reviews@2x.png");
+  }
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .reviews__wrapper {

@@ -1,6 +1,28 @@
 .benefits {
-  background-color: $color-default-white;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.benefits::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 788px;
+  height: 263px;
+  background-image: url("../img/clouds-benefits.png");
+  background-repeat: no-repeat;
+  background-position-x: 150px;
+  background-size: 87% 100%;
+  transform: translateY(-2605px);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/clouds-benefits@2x.png");
+  }
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .benefits__wrapper {
@@ -120,6 +142,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: $color-default-white;
 
   @include vp-1199 {
     width: 324px;

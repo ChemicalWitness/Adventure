@@ -1358,6 +1358,7 @@ button,
 
 .wrapper {
   position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3115,18 +3116,98 @@ button,
 }
 
 .upcoming-tours {
-  background-color: #ffffff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 767px) {
+  .upcoming-tours {
+    display: block;
+  }
+}
+
+.upcoming-tours::before {
+  position: absolute;
+  z-index: -1;
+  top: 305px;
+  right: 0;
+  width: 100%;
+  height: 1364px;
+  background-image: url("../img/decorative-clouds-desktop.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 41.8% auto;
+  -webkit-transform: translateY(476px);
+      -ms-transform: translateY(476px);
+          transform: translateY(476px);
+  content: "";
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .upcoming-tours::before {
+    background-image: url("../img/decorative-clouds-desktop@2x.png");
+  }
+}
+@media (max-width: 1199px) {
+  .upcoming-tours::before {
+    background-image: url("../img/decorative-clouds-tablet.png");
+    top: 450px;
+    background-size: 38% auto;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .upcoming-tours::before {
+    background-image: url("../img/decorative-clouds-tablet@2x.png");
+  }
+}
+@media (max-width: 767px) {
+  .upcoming-tours::before {
+    background-image: url("../img/decorative-clouds-mobile.png");
+    width: 346px;
+    height: 595px;
+    top: 225px;
+    background-size: 50% auto;
+  }
+}
+
+.upcoming-tours::after {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 830px;
+  width: 837px;
+  height: 279px;
+  background-image: url(../img/small-clouds.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-transform: translateY(476px);
+      -ms-transform: translateY(476px);
+          transform: translateY(476px);
+  content: "";
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .upcoming-tours::after {
+    background-image: url("../img/small-clouds@2x.png");
+  }
+}
+@media (max-width: 1199px) {
+  .upcoming-tours::after {
+    display: none;
+  }
 }
 
 .upcoming-tours__wrapper {
+  position: relative;
   padding-top: 120px;
   padding-bottom: 100px;
-  margin: 0 auto;
-  max-width: 1200px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .upcoming-tours__wrapper {
+    padding: 0;
     padding-top: 80px;
     padding-bottom: 85px;
     max-width: 674px;
@@ -3222,6 +3303,7 @@ button,
 
 .upcoming-tours__slider {
   padding: 0 5px;
+  max-width: 1200px;
 }
 @media (max-width: 767px) {
   .upcoming-tours__slider {
@@ -3550,8 +3632,7 @@ button,
 }
 
 .learning {
-  background-color: #ffffff;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .learning__wrapper {
@@ -4096,6 +4177,33 @@ button,
 
 .about {
   background-color: #ffffff;
+  overflow: hidden;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 840px;
+  height: 280px;
+  background-image: url("../img/clouds-about.png");
+  background-repeat: no-repeat;
+  background-position-x: 120px;
+  background-size: 87% 100%;
+  -webkit-transform: translateY(-3715px);
+      -ms-transform: translateY(-3715px);
+          transform: translateY(-3715px);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .about::after {
+    background-image: url("../img/clouds-about@2x.png");
+  }
+}
+@media (max-width: 1199px) {
+  .about::after {
+    display: none;
+  }
 }
 
 .about__wrapper {
@@ -4106,7 +4214,7 @@ button,
   margin: 0 auto;
   margin-bottom: 50px;
   gap: 30px;
-  overflow-x: hidden;
+  overflow: hidden;
   min-height: 474px;
 }
 @media (max-width: 1199px) {
@@ -4284,8 +4392,33 @@ button,
 }
 
 .reviews {
-  background-color: #ffffff;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.reviews::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 1170px;
+  height: 391px;
+  background-image: url("../img/clouds-reviews.png");
+  background-repeat: no-repeat;
+  background-size: 65% 100%;
+  -webkit-transform: translateY(-2650px);
+      -ms-transform: translateY(-2650px);
+          transform: translateY(-2650px);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .reviews::after {
+    background-image: url("../img/clouds-reviews@2x.png");
+  }
+}
+@media (max-width: 1199px) {
+  .reviews::after {
+    display: none;
+  }
 }
 
 .reviews__wrapper {
@@ -4423,6 +4556,18 @@ button,
   }
 }
 
+.review-card__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
+}
+@media (max-width: 1199px) {
+  .review-card__info {
+    display: block;
+  }
+}
+
 .review-card__text p {
   margin: 0;
   font-size: 14px;
@@ -4457,6 +4602,12 @@ button,
   .review-card__text {
     margin-bottom: 15px;
   }
+}
+
+.review-card__name {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 15px;
 }
 
 .review-card__name p {
@@ -4495,8 +4646,34 @@ button,
 }
 
 .benefits {
-  background-color: #ffffff;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.benefits::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 788px;
+  height: 263px;
+  background-image: url("../img/clouds-benefits.png");
+  background-repeat: no-repeat;
+  background-position-x: 150px;
+  background-size: 87% 100%;
+  -webkit-transform: translateY(-2605px);
+      -ms-transform: translateY(-2605px);
+          transform: translateY(-2605px);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .benefits::after {
+    background-image: url("../img/clouds-benefits@2x.png");
+  }
+}
+@media (max-width: 1199px) {
+  .benefits::after {
+    display: none;
+  }
 }
 
 .benefits__wrapper {
@@ -4640,6 +4817,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background-color: #ffffff;
 }
 @media (max-width: 1199px) {
   .benefits__slider-slide {
@@ -4967,6 +5145,11 @@ button,
   right: auto;
   z-index: 1;
 }
+@media (max-width: 1199px) {
+  .questions__image-background {
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .questions__image-background {
     width: 100%;
@@ -4976,6 +5159,11 @@ button,
 .questions__image-background img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1199px) {
+  .questions__image-background img {
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .questions__image-background img {

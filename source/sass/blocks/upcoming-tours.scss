@@ -1,15 +1,82 @@
 .upcoming-tours {
-  background-color: $color-default-white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+.upcoming-tours::before {
+  position: absolute;
+  z-index: -1;
+  top: 305px;
+  right: 0;
+
+  width: 100%;
+  height: 1364px;
+
+  background-image: url("../img/decorative-clouds-desktop.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 41.8% auto;
+
+  transform: translateY(476px);
+  content: "";
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/decorative-clouds-desktop@2x.png");
+  }
+
+  @include vp-1199 {
+    background-image: url("../img/decorative-clouds-tablet.png");
+    top: 450px;
+    background-size: 38% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decorative-clouds-tablet@2x.png");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/decorative-clouds-mobile.png");
+    width: 346px;
+    height: 595px;
+    top: 225px;
+    background-size: 50% auto;
+  }
+}
+
+.upcoming-tours::after {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 830px;
+  width: 837px;
+  height: 279px;
+  background-image: url(../img/small-clouds.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  transform: translateY(476px);
+  content: "";
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/small-clouds@2x.png");
+  }
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .upcoming-tours__wrapper {
+  position: relative;
   padding-top: 120px;
   padding-bottom: 100px;
-  margin: 0 auto;
-  max-width: 1200px;
-  overflow-x: hidden;
+  overflow: hidden;
 
   @include vp-1199 {
+    padding: 0;
     padding-top: 80px;
     padding-bottom: 85px;
     max-width: 674px;
@@ -21,6 +88,8 @@
     max-width: fit-content;
   }
 }
+
+
 
 .upcoming-tours__title {
   position: relative;
@@ -92,6 +161,7 @@
 
 .upcoming-tours__slider {
   padding: 0 5px;
+  max-width: 1200px;
 
   @include vp-767 {
     padding: 0;

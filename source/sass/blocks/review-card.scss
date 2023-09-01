@@ -1,3 +1,12 @@
+.review-card__info {
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  @include vp-1199 {
+    display: block;
+  }
+}
+
 .review-card__text p {
   margin: 0;
 
@@ -29,6 +38,11 @@
   @include vp-767 {
     margin-bottom: 15px;
   }
+}
+
+.review-card__name {
+  align-self: flex-end;
+  margin-bottom: 15px;
 }
 
 .review-card__name p {
