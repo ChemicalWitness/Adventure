@@ -257,9 +257,6 @@
   }
 }
 
-.learning__about-list-item:last-child {
-  padding-bottom: 0;
-}
 
 .learning__about-list-item svg {
   position: absolute;
@@ -388,9 +385,9 @@
   }
 }
 
-
 .learning__about-list-item:last-child {
   margin-right: 0;
+  padding-bottom: 0;
 
   @include vp-1199 {
     grid-column: 1/2;

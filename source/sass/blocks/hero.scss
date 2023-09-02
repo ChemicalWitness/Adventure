@@ -187,6 +187,7 @@
   display: block;
   width: auto;
   max-width: 222px;
+  border: 1px solid transparent;
 
   font-size: 16px;
   line-height: 16px;
@@ -206,6 +207,25 @@
     width: 100%;
     max-width: none;
   }
+}
+
+
+.hero__slide-button:focus-visible,
+.hero__slide-button:hover {
+  border: 1px solid #1c3374;
+  background-color: $color-default-white;
+  color: #1c3374;
+}
+
+.hero__slide-button:active {
+  background-color: #1c3374;
+  color: $color-default-white;
+  border: 1px solid transparent;
+}
+
+.hero__slide-button:disabled {
+  background-color: $color-main-btn;
+  opacity: 0.1;
 }
 
 .hero__slide-additional {
@@ -300,6 +320,11 @@
   width: 56px;
   height: 56px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero__slide-video-btn:hover,
+.hero__slide-video-btn:focus-visible {
+
 }
 
 .hero__slide-video {

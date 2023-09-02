@@ -21,29 +21,53 @@
                 <use href="./img/sprite.svg#menu-burger"></use>
               </svg>
             </button>
-            <a class="main-nav__logo">
+            <a class="main-nav__logo" href="index.html">
               <svg width="205" height="62">
                 <use href="./img/sprite.svg#logo"></use>
               </svg>
             </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--header">Туры</a>
+                <a class="main-nav__link main-nav__link--header" href="#tours">
+                  <span>
+                    Туры
+                  </span>
+                </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--header">Обучение</a>
+                <a class="main-nav__link main-nav__link--header" href="#learning">
+                  <span>
+                    Обучение
+                  </span>
+                </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--header">О нас</a>
+                <a class="main-nav__link main-nav__link--header" href="#about">
+                  <span>
+                    О нас
+                  </span>
+                </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--header">Отзывы</a>
+                <a class="main-nav__link main-nav__link--header" href="#reviews">
+                  <span>
+                    Отзывы
+                  </span>
+                </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--header">Фотографии</a>
+                <a class="main-nav__link main-nav__link--header" href="#gallery">
+                  <span>
+                    Фотографии
+                  </span>
+                </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--header">Контакты</a>
+                <a class="main-nav__link main-nav__link--header" href="#contacts">
+                  <span>
+                    Контакты
+                  </span>
+                </a>
               </li>
             </ul>
             <a class="main-nav__phone main-nav__phone--header" href="tel:+78007253232">8 800 725 32 32</a>
@@ -72,7 +96,7 @@
                     <div class="hero__slide-content">
                       <h2>Захватывающие вершины Кавказа</h2>
                       <p>В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                      <a href="#">Смотреть тур</a>
+                      <a class="hero__slide-button" href="#">Смотреть тур</a>
                     </div>
                     <div class="hero__slide-additional">
                       <span>
@@ -122,7 +146,7 @@
                     <div class="hero__slide-content">
                       <h2>Невероятная природа Камчатки</h2>
                       <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                      <a href="#">Смотреть тур</a>
+                      <a class="hero__slide-button" href="#">Смотреть тур</a>
                     </div>
                     <div class="hero__slide-additional">
                       <span>
@@ -166,7 +190,7 @@
                     <div class="hero__slide-content">
                       <h2>Магические пейзажи Алтайского Края</h2>
                       <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                      <a href="#">Смотреть тур</a>
+                      <a class="hero__slide-button" href="#">Смотреть тур</a>
                     </div>
                     <div class="hero__slide-additional">
                       <span>
@@ -193,7 +217,7 @@
           </div>
         </section>
 
-        <section class="upcoming-tours">
+        <section class="upcoming-tours" id="tours">
           <div class="upcoming-tours__wrapper">
             <div class="upcoming-tours__title">
               <h2 data-title="Ближайшие туры">Ближайшие туры</h2>
@@ -227,7 +251,7 @@
                   <div class="tour-card__wrapper">
                     <div class="tour-card__location">
                       <svg width="9" height="12">
-                        <use href="./img/sprite.svg#pin"></use>
+                        <use href="./img/sprite.svg#pin-light"></use>
                       </svg>
                       <span>Кавказ</span>
                     </div>
@@ -279,7 +303,7 @@
                   <div class="tour-card__wrapper">
                     <div class="tour-card__location">
                       <svg width="9" height="12">
-                        <use href="./img/sprite.svg#pin"></use>
+                        <use href="./img/sprite.svg#pin-light"></use>
                       </svg>
                       <span>Алтай</span>
                     </div>
@@ -331,7 +355,7 @@
                   <div class="tour-card__wrapper">
                     <div class="tour-card__location">
                       <svg width="9" height="12">
-                        <use href="./img/sprite.svg#pin"></use>
+                        <use href="./img/sprite.svg#pin-light"></use>
                       </svg>
                       <span>Адыгея</span>
                     </div>
@@ -379,7 +403,7 @@
             </a>
           </div>
         </section>
-        <section class="learning">
+        <section class="learning" id="learning">
           <div class="learning__wrapper">
             <div class="learning__title">
               <h2 data-title="Обучение">Обучение</h2>
@@ -526,7 +550,7 @@
           </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
           <div class="about__wrapper">
             <div class="about__image">
               <picture>
@@ -550,7 +574,7 @@
           </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="reviews__wrapper">
             <div class="reviews__title">
               <h2 data-title="Отзывы">Отзывы</h2>
@@ -750,7 +774,7 @@
           </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
           <div  class="gallery__wrapper">
             <h2 data-title="Фотогалерея">Фотогалерея</h2>
             <div class="gallery__text">
@@ -875,7 +899,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="contacts__wrapper">
             <h2 data-title="Контакты">Контакты</h2>
             <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>

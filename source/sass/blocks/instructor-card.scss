@@ -55,3 +55,22 @@
     line-height: 18px;
   }
 }
+
+.instructor-card__link:hover,
+.instructor-card__link:focus-visible {
+  border: 1px solid $color-main;
+}
+
+.instructor-card__link:active {
+  border-color: transparent;
+  background-color: $color-additional-icon;
+}
+
+.instructor-card__link:active svg {
+  fill: $color-default-white;
+}
+
+.instructor-card__link:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

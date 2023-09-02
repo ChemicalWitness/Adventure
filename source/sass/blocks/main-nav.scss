@@ -37,6 +37,11 @@
   }
 }
 
+.main-nav__logo:hover,
+.main-nav__logo:focus-visible {
+  opacity: 0.7;
+}
+
 .main-nav__logo svg {
   fill: $color-default-white;
 
@@ -76,10 +81,29 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  border: 1px solid transparent;
 
   @include vp-1199 {
     color: $color-main;
   }
+}
+
+.main-nav__link:hover {
+  border-bottom: 1px solid $color-default-white;
+}
+
+.main-nav__link:focus-visible {
+  border: 1px solid $color-default-white;
+  outline: none;
+}
+
+.main-nav__link:active {
+  border: 1px solid transparent;
+}
+
+.main-nav__link:disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .main-nav__phone {
@@ -102,6 +126,21 @@
     font-size: 14px;
     line-height: 14px;
   }
+}
+
+.main-nav__phone:hover,
+.main-nav__phone:focus-visible {
+  color: #1c3374;
+  outline: none;
+}
+
+.main-nav__phone:active {
+  color: $color-additional-icon;
+}
+
+.main-nav__phone:disabled {
+  color: $color-default-white;
+  opacity: 0.1;
 }
 
 .main-nav__phone--header {
@@ -204,6 +243,20 @@
   }
 }
 
+.main-nav--nojs .main-nav__phone:hover,
+.main-nav--nojs .main-nav__phone:focus-visible {
+  color: #1c3374;
+}
+
+.main-nav--nojs .main-nav__phone:active {
+  color: $color-additional-icon;
+}
+
+.main-nav--nojs .main-nav__phone:disabled {
+  color: $color-default-white;
+  opacity: 0.1;
+}
+
 .main-nav--nojs .main-nav__list {
   @include vp-1199 {
     position: static;
@@ -243,6 +296,23 @@
   }
 }
 
+.main-nav--nojs .main-nav__link:hover > span {
+  border-bottom: 1px solid $color-main;
+}
+
+.main-nav--nojs .main-nav__link:focus-visible > span {
+  border: 1px solid $color-main;
+}
+
+.main-nav--nojs .main-nav__link:active > span {
+  border: 1px solid transparent;
+}
+
+.main-nav--nojs .main-nav__link:disabled > span {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .main-nav--opened .main-nav__list {
   @include vp-1199 {
     position: absolute;
@@ -279,6 +349,23 @@
   }
 }
 
+.main-nav--opened .main-nav__link:hover > span {
+  border-bottom: 1px solid $color-main;
+}
+
+.main-nav--opened .main-nav__link:focus-visible > span {
+  border: 1px solid $color-main;
+}
+
+.main-nav--opened .main-nav__link:active > span {
+  border-color: transparent;
+}
+
+.main-nav--opened .main-nav__link:disabled > span {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .main-nav--opened > .main-nav__logo svg {
   @include vp-1199 {
     fill: $color-main;
@@ -289,6 +376,20 @@
   @include vp-1199 {
     color: $color-main;
   }
+}
+
+.main-nav--opened .main-nav__phone:hover,
+.main-nav--opened .main-nav__phone:focus-visible {
+  color: #1c3374;
+}
+
+.main-nav--opened .main-nav__phone:active {
+  color: $color-additional-icon;
+}
+
+.main-nav--opened .main-nav__phone:disabled {
+  color: $color-default-white;
+  opacity: 0.1;
 }
 
 .main-nav--opened > .main-nav__toggle svg {

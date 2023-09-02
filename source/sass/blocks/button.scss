@@ -1,13 +1,42 @@
 .button {
   width: 37px;
   height: 35px;
-  border: none;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $color-main-btn;
 
   cursor: pointer;
+}
+
+.button svg {
+  fill: $color-default-white;
+}
+
+
+.button:hover,
+.button:focus-visible {
+  background-color: $color-default-white;
+  border: 1px solid #1c3374;
+}
+
+.button:hover svg {
+  fill: #1c3374;
+}
+
+.button:active {
+  border-color: transparent;
+  background-color: #1c3374;
+}
+
+.button:active svg {
+  fill: $color-default-white;
+}
+
+.button:disabled {
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .button--right svg {
