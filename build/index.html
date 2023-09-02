@@ -880,15 +880,15 @@
               <h2>Остались вопросы?</h2>
               <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
             </div>
-            <div class="questions__form-wrapper">
+            <div class="questions__form-wrapper" data-form-validate="data-form-validate" data-callback="base">
               <form action="https://echo.htmlacademy.ru/." id="form" method="get" novalidate>
                 <div class="questions__form-inner-wrapper">
-                  <div class="custom-input">
+                  <div class="custom-input" data-validate-type="text" data-limitation="name" data-required="data-required">
                     <label>
                       <input type="text" name="username" id="username" placeholder="Как к вам обращаться?">
                     </label>
                   </div>
-                  <div class="custom-input">
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required" data-phone-length="18">
                     <label>
                       <input type="tel" name="phone" id="phone" placeholder="Телефон">
                     </label>
@@ -951,22 +951,46 @@
             </a>
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
-                <a class="footer__nav-link">Туры</a>
+                <a class="footer__nav-link" href="#tours">
+                  <span>
+                    Туры
+                  </span>
+                </a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link">Обучение</a>
+                <a class="footer__nav-link" href="#learning">
+                  <span>
+                    Обучение
+                  </span>
+                </a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link">О нас</a>
+                <a class="footer__nav-link" href="#about">
+                  <span>
+                    О нас
+                  </span>
+                </a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link">Отзывы</a>
+                <a class="footer__nav-link" href="#reviews">
+                  <span>
+                    Отзывы
+                  </span>
+                </a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link">Фотографии</a>
+                <a class="footer__nav-link" href="#gallery">
+                  <span>
+                    Фотографии
+                  </span>
+                </a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link">Контакты</a>
+                <a class="footer__nav-link" href="#contacts">
+                  <span>
+                    Контакты
+                  </span>
+                </a>
               </li>
             </ul>
             <a class="footer__phone" href="tel:+78007253232">8 800 725 32 32</a>

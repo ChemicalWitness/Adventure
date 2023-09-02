@@ -1,10 +1,6 @@
 .review-card__info {
   display: grid;
   grid-template-rows: auto 1fr;
-
-  @include vp-1199 {
-    display: block;
-  }
 }
 
 .review-card__text p {
@@ -43,6 +39,10 @@
 .review-card__name {
   align-self: flex-end;
   margin-bottom: 15px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+  }
 }
 
 .review-card__name p {
