@@ -2,6 +2,7 @@ const pagination = document.querySelector('.hero__pagination-wrapper');
 let player;
 const Swiper = window.Swiper;
 const slider = document.querySelector('.hero__slider');
+const slides = document.querySelectorAll('.hero__slide');
 
 export const heroSlider = () =>
   slider &&
@@ -17,9 +18,15 @@ export const heroSlider = () =>
     simulateTouch: false,
     on: {
       slideChange() {
-        pagination.addEventListener('click', () => {
-          if (player.data === YT.PlayerState.PLAYING) {
-            player.target.pauseVideo();
+        slides.forEach((slide) => {
+          if (slide.classList.contains('.swiper-slide-active') && slide.querySelector('.hero__slide-video')) {
+            pagination.addEventListener('click', () => {
+              if (player.data === YT.PlayerState.PLAYING) {
+                player.target.pauseVideo();
+              }
+            });
+          } else {
+            return;
           }
         });
       },
