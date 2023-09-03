@@ -3,7 +3,7 @@ let player;
 const Swiper = window.Swiper;
 const slider = document.querySelector('.hero__slider');
 
-export function heroSlider() {
+export const heroSlider = () =>
   slider &&
   new Swiper('.hero__slider', {
     loop: true,
@@ -21,11 +21,11 @@ export function heroSlider() {
           if (player.data === YT.PlayerState.PLAYING) {
             player.target.pauseVideo();
           }
-        })
-      }
+        });
+      },
     },
   });
-}
+
 
 export function onPlayerStateChange(event) {
   player = event;
