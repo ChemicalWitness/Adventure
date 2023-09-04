@@ -268,11 +268,12 @@
   justify-self: end;
 
   @include vp-1199 {
+    width: auto;
+    height: auto;
     position: relative;
-    top: 0;
-    right: 0;
     order: 4;
     margin: 0 auto;
+    transform: translateY(0);
   }
 
   @include vp-767 {

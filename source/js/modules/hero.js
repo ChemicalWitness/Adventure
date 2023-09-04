@@ -19,7 +19,7 @@ export const heroSlider = () =>
     on: {
       slideChange() {
         slides.forEach((slide) => {
-          if (slide.classList.contains('.swiper-slide-active') && slide.querySelector('.hero__slide-video')) {
+          if (slide.classList.contains('swiper-slide-active') && slide.querySelector('.hero__slide-video')) {
             pagination.addEventListener('click', () => {
               if (player.data === YT.PlayerState.PLAYING) {
                 player.target.pauseVideo();

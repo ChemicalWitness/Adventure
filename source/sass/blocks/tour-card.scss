@@ -71,12 +71,12 @@
   grid-row: 1/2;
   display: flex;
   gap: 40px;
-  margin-left: 35px;
+  margin-left: 17px;
   margin-bottom: 23px;
 
   @include vp-1199 {
     gap: 20px;
-    margin-left: 25px;
+    margin-left: 7px;
     align-items: center;
   }
 
