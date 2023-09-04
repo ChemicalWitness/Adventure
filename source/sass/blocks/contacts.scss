@@ -29,55 +29,26 @@
 
 .contacts__wrapper h2 {
   position: relative;
-  margin: 0;
   margin-bottom: 12px;
-  padding: 0;
   grid-column: 1/ span 2;
   grid-row: 1/2;
-
-
-  font-size: 35px;
-  line-height: 55px;
-  font-weight: 800;
 
   @include vp-1199 {
     margin-bottom: 18px;
     grid-column: 1/2;
     grid-row: 1/2;
-    font-size: 25px;
-    line-height: 25px;
   }
 
   @include vp-767 {
     margin-bottom: 10px;
-    font-size: 22px;
-    line-height: 22px;
   }
 }
 
 .contacts__wrapper h2::after {
-  content: attr(data-title);
-  position: absolute;
   bottom: 5px;
-  left: 0;
-
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 800;
-  color: $color-main;
-  opacity: 0.03;
 
   @include vp-1199 {
     bottom: 0;
-
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  @include vp-767 {
-    bottom: 0;
-    font-size: 26px;
-    line-height: 26px;
   }
 }
 
