@@ -75,6 +75,8 @@
 
 .gallery__slider {
   margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
 }
 
 .gallery__slider-slide {
