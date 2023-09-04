@@ -1,16 +1,16 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import { checkWindow, initMenu, toggleHandlerNav } from './modules/main-nav';
-import { findVideo } from './modules/video';
-import { heroSlider } from './modules/hero';
-import { upcomingToursSlider } from './modules/upcoming-tours-slider';
-import { instructorsSlider } from './modules/instructors-slider';
-import { reviewsSlider } from './modules/reviews-slider';
-import { benefitsSlider } from './modules/benefits-slider';
-import { gallerySlider } from './modules/gallery-slider';
-import { mapInit } from './modules/map';
-import { initAudio } from './modules/audio';
+import {checkWindow, initMenu, toggleHandlerNav} from './modules/main-nav';
+import {findVideo} from './modules/video';
+import {heroSlider} from './modules/hero';
+import {upcomingToursSlider} from './modules/upcoming-tours-slider';
+import {instructorsSlider} from './modules/instructors-slider';
+import {reviewsSlider} from './modules/reviews-slider';
+import {benefitsSlider} from './modules/benefits-slider';
+import {gallerySlider} from './modules/gallery-slider';
+import {mapInit} from './modules/map';
+import {initAudio} from './modules/audio';
 
 // ---------------------------------
 
