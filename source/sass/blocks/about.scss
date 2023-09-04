@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
 }
 
@@ -64,16 +64,17 @@
   height: 100%;
   max-width: none;
   z-index: 1;
-  right: -105px;
-  top: 0;
+  right: -100px;
+  top: 10px;
 
   @include vp-1199 {
-    top: 40px;
+    top: 53px;
     height: 402px;
+    right: -105px;
   }
 
   @include vp-767 {
-    top: -5px;
+    top: -10px;
     left: auto;
     right: -110px;
   }
@@ -87,7 +88,7 @@
   padding-top: 35px;
 
   @include vp-1199 {
-    padding-right: 45px;
+    padding-right: 40px;
   }
 
   @include vp-767 {
@@ -97,14 +98,15 @@
 
 .about__info h2 {
   position: relative;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 
   @include vp-1199 {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 
   @include vp-767 {
     margin-bottom: 33px;
+    padding-top: 5px;
   }
 }
 
@@ -118,7 +120,7 @@
   margin-bottom: 30px;
 
   @include vp-1199 {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 
   @include vp-767 {

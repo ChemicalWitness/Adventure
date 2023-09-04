@@ -28,6 +28,7 @@
   z-index: 1;
   width: 100%;
   height: 100%;
+  background-color: #3c4f20;
 }
 
 .questions__image-background img {
@@ -43,6 +44,7 @@
   margin-bottom: 45px;
   display: flex;
   flex-direction: column;
+  max-width: 650px;
 
   @include vp-1199 {
     width: 296px;

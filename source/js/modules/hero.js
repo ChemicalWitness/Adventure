@@ -8,7 +8,6 @@ export const heroSlider = () =>
   slider &&
   new Swiper('.hero__slider', {
     loop: true,
-    watchSlidesProgress: true,
     slidesPerView: 1,
     spaceBetween: 0,
     pagination: {

@@ -43,6 +43,13 @@
   text-align: center;
   margin-bottom: 23px;
 
+  @include vp-1199 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+
   @include vp-767 {
     grid-row: 2/3;
     grid-column: 1/span 2;
@@ -71,13 +78,14 @@
   grid-row: 1/2;
   display: flex;
   gap: 40px;
-  margin-left: 17px;
+  margin-left: 21px;
   margin-bottom: 23px;
 
   @include vp-1199 {
-    gap: 20px;
-    margin-left: 7px;
+    gap: 22px;
+    margin-left: 10px;
     align-items: center;
+    justify-content: space-evenly;
   }
 
   @include vp-767 {
@@ -95,6 +103,10 @@
 
   @include vp-1199 {
     gap: 10px;
+  }
+
+  @include vp-767 {
+    gap: 15px;
   }
 }
 
@@ -174,6 +186,10 @@
 
   @include vp-1199 {
     gap: 7px 0;
+  }
+
+  @include vp-767 {
+    gap: 5px 0;
   }
 }
 
