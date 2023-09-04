@@ -75,7 +75,7 @@
 }
 
 .main-nav__link {
-  display: block;
+  display: inline-block;
 
   font-family: $ff-montserrat;
   font-size: 16px;
@@ -296,19 +296,19 @@
   }
 }
 
-.main-nav--nojs .main-nav__link:hover > span {
+.main-nav--nojs .main-nav__link:hover {
   border-bottom: 1px solid $color-main;
 }
 
-.main-nav--nojs .main-nav__link:focus-visible > span {
+.main-nav--nojs .main-nav__link:focus-visible {
   border: 1px solid $color-main;
 }
 
-.main-nav--nojs .main-nav__link:active > span {
+.main-nav--nojs .main-nav__link:active {
   border: 1px solid transparent;
 }
 
-.main-nav--nojs .main-nav__link:disabled > span {
+.main-nav--nojs .main-nav__link:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -340,28 +340,28 @@
   @include vp-1199 {
     margin-bottom: 15px;
     padding: 5px 0;
-    padding-left: 45px;
+    margin-left: 45px;
   }
 
   @include vp-767 {
-    padding-left: 15px;
+    margin-left: 15px;
     margin-bottom: 12px;
   }
 }
 
-.main-nav--opened .main-nav__link:hover > span {
+.main-nav--opened .main-nav__link:hover {
   border-bottom: 1px solid $color-main;
 }
 
-.main-nav--opened .main-nav__link:focus-visible > span {
+.main-nav--opened .main-nav__link:focus-visible {
   border: 1px solid $color-main;
 }
 
-.main-nav--opened .main-nav__link:active > span {
+.main-nav--opened .main-nav__link:active {
   border-color: transparent;
 }
 
-.main-nav--opened .main-nav__link:disabled > span {
+.main-nav--opened .main-nav__link:disabled {
   opacity: 0.5;
   pointer-events: none;
 }

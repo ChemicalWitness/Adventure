@@ -2193,7 +2193,7 @@ button,
 }
 
 .main-nav__link {
-  display: block;
+  display: inline-block;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -2464,19 +2464,19 @@ button,
   }
 }
 
-.main-nav--nojs .main-nav__link:hover > span {
+.main-nav--nojs .main-nav__link:hover {
   border-bottom: 1px solid #2d383f;
 }
 
-.main-nav--nojs .main-nav__link:focus-visible > span {
+.main-nav--nojs .main-nav__link:focus-visible {
   border: 1px solid #2d383f;
 }
 
-.main-nav--nojs .main-nav__link:active > span {
+.main-nav--nojs .main-nav__link:active {
   border: 1px solid transparent;
 }
 
-.main-nav--nojs .main-nav__link:disabled > span {
+.main-nav--nojs .main-nav__link:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -2516,29 +2516,29 @@ button,
   .main-nav--opened .main-nav__link--header {
     margin-bottom: 15px;
     padding: 5px 0;
-    padding-left: 45px;
+    margin-left: 45px;
   }
 }
 @media (max-width: 767px) {
   .main-nav--opened .main-nav__link--header {
-    padding-left: 15px;
+    margin-left: 15px;
     margin-bottom: 12px;
   }
 }
 
-.main-nav--opened .main-nav__link:hover > span {
+.main-nav--opened .main-nav__link:hover {
   border-bottom: 1px solid #2d383f;
 }
 
-.main-nav--opened .main-nav__link:focus-visible > span {
+.main-nav--opened .main-nav__link:focus-visible {
   border: 1px solid #2d383f;
 }
 
-.main-nav--opened .main-nav__link:active > span {
+.main-nav--opened .main-nav__link:active {
   border-color: transparent;
 }
 
-.main-nav--opened .main-nav__link:disabled > span {
+.main-nav--opened .main-nav__link:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -2732,7 +2732,7 @@ button,
 }
 
 .footer__nav-link {
-  display: block;
+  display: inline-block;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -2753,16 +2753,16 @@ button,
   }
 }
 
-.footer__nav-link:hover span {
+.footer__nav-link:hover {
   border-bottom: 1px solid #2d383f;
 }
 
-.footer__nav-link:focus-visible span {
+.footer__nav-link:focus-visible {
   border: 1px solid #2d383f;
   outline: none;
 }
 
-.footer__nav-link:active span {
+.footer__nav-link:active {
   border: 1px solid transparent;
 }
 

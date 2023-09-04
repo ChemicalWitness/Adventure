@@ -83,7 +83,7 @@
 }
 
 .footer__nav-link {
-  display: block;
+  display: inline-block;
 
   font-family: $ff-montserrat;
   font-size: 16px;
@@ -103,16 +103,16 @@
   }
 }
 
-.footer__nav-link:hover span {
+.footer__nav-link:hover {
   border-bottom: 1px solid $color-main;
 }
 
-.footer__nav-link:focus-visible span {
+.footer__nav-link:focus-visible {
   border: 1px solid $color-main;
   outline: none;
 }
 
-.footer__nav-link:active span {
+.footer__nav-link:active {
   border: 1px solid transparent;
 }
 
