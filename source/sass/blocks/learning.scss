@@ -168,7 +168,7 @@
   font-weight: 700;
 
   @include vp-1199 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
     font-size: 18px;
     line-height: 18px;
@@ -186,16 +186,16 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 32px;
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 32px;
+  row-gap: 32px;
 
   @include vp-1199 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     padding-bottom: 0;
-    row-gap: 87px;
+    row-gap: 53px;
     column-gap: 30px;
   }
 
@@ -203,8 +203,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 0 auto;
     max-width: 450px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    grid-auto-flow: column;
   }
 }
 
@@ -230,6 +233,8 @@
   gap: 15px;
   min-height: 48px;
   padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @include vp-767 {
     display: block;
@@ -237,44 +242,71 @@
     padding-bottom: 14px;
     min-height: 44px;
   }
-}
 
+  @media (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(4n + 2),
+    &:nth-child(4n + 3) {
+      grid-column: -2 / -1;
+    }
+  }
+}
 
 .learning__about-list-item svg {
   position: absolute;
-  bottom: 14px;
+  bottom: 30px;
   left: 0;
 
   @include vp-767 {
     width: 19px;
     height: 19px;
-    bottom: 50%;
+    bottom: 30%;
     left: 34px;
   }
 }
 
-.learning__about-list-item:first-child::after {
+.learning__about-list-item::after {
   @include vp-1199 {
     content: "";
     position: absolute;
+    bottom: 0;
+    left: 0;
+
     width: 110%;
     height: 1px;
-    background: #0266c1;
-    opacity: 0.2;
-    top: 120%;
-    max-width: 570px;
-    left: 0;
+
+    background-color: rgba(2, 101, 193, 0.2);
   }
 
   @include vp-767 {
-    content: "";
-    position: absolute;
+    top: 50%;
+    left: 7px;
+
     width: 1px;
-    height: 100%;
-    background: #0266c1;
-    opacity: 0.2;
-    left: 10px;
-    top: 25px;
+    height: 72px;
+  }
+}
+
+.learning__about-list-item:nth-child(4n)::after {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    top: 0;
+
+    display: block;
+  }
+}
+
+.learning__about-list-item:nth-child(4n + 2)::after {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    top: 100%;
+    left: 7px;
+
+    width: 1px;
+    height: 53px;
+  }
+}
+
+.learning__about-list-item:nth-child(4n + 3)::after {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: none;
   }
 }
 
@@ -286,7 +318,7 @@
     height: 1px;
     background: #0266c1;
     opacity: 0.2;
-    top: -15px;
+    bottom: 0;
     left: 0;
   }
 
@@ -295,85 +327,30 @@
   }
 }
 
-.learning__about-list-item:nth-child(2n):not(:nth-child(4n))::after {
-  @include vp-1199 {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 56px;
-    background: #0266c1;
-    opacity: 0.2;
-    left: 5px;
-    bottom: -73px;
-  }
-
-  @include vp-767 {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    background: #0266c1;
-    opacity: 0.2;
-    left: 10px;
-    top: 25px;
-  }
-}
-
-.learning__about-list-item:nth-child(3n)::after {
-  @include vp-767 {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    background: #0266c1;
-    opacity: 0.2;
-    left: 10px;
-    top: 25px;
-  }
-}
-
-
 .learning__about-list-item::before {
   content: "";
   position: absolute;
   width: 14px;
   height: 14px;
-  bottom: -37px;
+  bottom: -5px;
   left: 0;
   border-radius: 50%;
   background-color: $color-additional-icon;
 
-  @include vp-1199 {
-    bottom: -35%;
-    left: 0;
-  }
 
   @include vp-767 {
-    left: 4px;
+    top: 50%;
     bottom: auto;
-    top: 10px;
+
+    transform: translateY(-50%);
   }
 }
 
-.learning__about-list-item:nth-child(3n)::before,
-.learning__about-list-item:nth-child(4n)::before {
-  @include vp-1199 {
+.learning__about-list-item:nth-child(4n + 3)::before,
+.learning__about-list-item:nth-child(4n + 4)::before {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    top: -7px;
     bottom: auto;
-    top: -25px;
-  }
-
-  @include vp-767 {
-    top: 10px;
-  }
-}
-
-.learning__about-list-item:last-child {
-  margin-right: 0;
-  padding-bottom: 0;
-
-  @include vp-1199 {
-    grid-column: 1/2;
-    grid-row: 2/3;
   }
 }
 
