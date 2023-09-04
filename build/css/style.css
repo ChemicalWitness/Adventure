@@ -3039,12 +3039,6 @@ button,
   }
 }
 
-.hero__slide-background picture {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 .hero__slide-background img {
   display: block;
   position: absolute;
@@ -5279,6 +5273,7 @@ button,
     width: 320px;
     height: 260px;
     gap: 3px;
+    overflow: hidden;
   }
 }
 
@@ -5312,20 +5307,8 @@ button,
 @media (max-width: 767px) {
   .gallery__picture {
     gap: 3px;
-  }
-}
-
-@media (max-width: 767px) {
-  .gallery__picture picture:not(:first-of-type) > img {
     width: 172px;
-    height: 153px;
-  }
-}
-
-@media (max-width: 767px) {
-  .gallery__picture picture:first-of-type > img {
-    width: 172px;
-    height: 103px;
+    height: 260px;
   }
 }
 
