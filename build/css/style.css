@@ -4962,6 +4962,8 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 1440px;
+  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .benefits__wrapper {

@@ -31,6 +31,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 1440px;
+  overflow: hidden;
 
   @include vp-1199 {
     padding: 0 45px;
