@@ -27,19 +27,19 @@
 
 .benefits__wrapper {
   margin: 0 auto;
-  margin-bottom: 130px;
+  margin-bottom: 115px;
   display: flex;
   align-items: center;
   flex-direction: column;
 
   @include vp-1199 {
     padding: 0 45px;
-    margin-bottom: 85px;
+    margin-bottom: 73px;
   }
 
   @include vp-767 {
     padding: 0 15px;
-    margin-bottom: 70px;
+    margin-bottom: 57px;
   }
 }
 
@@ -98,6 +98,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    row-gap: 28px;
     margin: 0 auto;
   }
 
@@ -122,6 +123,7 @@
 
   @include vp-1199 {
     width: 324px;
+    height: auto;
     padding: 30px 20px;
     min-height: 0;
   }

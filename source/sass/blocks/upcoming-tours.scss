@@ -83,13 +83,13 @@
   @include vp-1199 {
     padding: 0;
     padding-top: 80px;
-    padding-bottom: 85px;
+    padding-bottom: 73px;
     max-width: 674px;
   }
 
   @include vp-767 {
     padding: 60px 15px;
-    padding-bottom: 65px;
+    padding-bottom: 57px;
     max-width: fit-content;
   }
 }

@@ -4,28 +4,26 @@
 
 .learning__wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1260px;
 
   @include vp-1199 {
-    max-width: 678px;
+    max-width: 738px;
     overflow-x: hidden;
-  }
-
-  @include vp-767 {
-    padding: 0 15px;
   }
 }
 
 .learning__title {
-  padding-top: 30px;
+  padding: 0 30px;
+  padding-top: 15px;
   margin-bottom: 50px;
 
   @include vp-1199 {
     padding-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 
   @include vp-767 {
+    padding: 0 15px;
     margin-bottom: 37px;
   }
 }
@@ -68,14 +66,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 35px;
-
-  @include vp-1199 {
-    margin-bottom: 24px;
-  }
+  padding: 0 30px;
 
   @include vp-767 {
-    margin-bottom: 25px;
+    padding: 0 15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -102,25 +97,31 @@
 }
 
 .learning__instructors-slider {
-  margin-bottom: 50px;
+  padding: 0 30px;
+  padding-bottom: 50px;
+  padding-top: 35px;
   overflow: hidden;
 
   @include vp-1199 {
-    margin-bottom: 45px;
+    padding-top: 25px;
+    padding-bottom: 45px;
   }
 
   @include vp-767 {
-    margin-bottom: 40px;
+    padding: 15px;
+    margin-bottom: 25px;
   }
 }
 
 .learning__instructors-slider-slide {
+  position: relative;
   width: 278px;
   height: auto;
+  min-height: 377px;
   padding: 20px;
 
   background-color: $color-default-white;
-  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+
 
   @include vp-1199 {
     width: 206px;
@@ -134,11 +135,21 @@
   }
 }
 
+.learning__instructors-slider-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+}
+
 .learning__about {
-  padding-bottom: 97px;
+  padding-bottom: 80px;
 
   @include vp-1199 {
-    padding-bottom: 50px;
+    padding-bottom: 38px;
     margin: 0 auto;
     max-width: 678px;
   }
@@ -191,7 +202,7 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 10px;
     margin: 0 auto;
     max-width: 450px;
   }
@@ -223,7 +234,7 @@
   @include vp-767 {
     display: block;
     padding-left: 65px;
-    padding-bottom: 25px;
+    padding-bottom: 14px;
     min-height: 44px;
   }
 }
