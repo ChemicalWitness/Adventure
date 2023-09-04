@@ -4086,6 +4086,7 @@ button,
 
 .learning__instructors-slider {
   margin-bottom: 50px;
+  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .learning__instructors-slider {

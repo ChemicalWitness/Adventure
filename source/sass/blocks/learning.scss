@@ -103,6 +103,7 @@
 
 .learning__instructors-slider {
   margin-bottom: 50px;
+  overflow: hidden;
 
   @include vp-1199 {
     margin-bottom: 45px;
