@@ -162,7 +162,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     max-width: 290px;
     font-size: 30px;
     line-height: 30px;
@@ -192,6 +192,7 @@
 
   @include vp-767 {
     margin-bottom: 20px;
+    padding: 0 5px;
 
     font-size: 15px;
     line-height: 20px;
