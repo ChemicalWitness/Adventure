@@ -20,8 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  heroSlider();
+  upcomingToursSlider();
   toggleHandlerNav();
-  findVideo();
 
 
   // Modules
@@ -36,9 +37,8 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     checkWindow();
     initMenu();
-    heroSlider();
+    findVideo();
     initAudio();
-    upcomingToursSlider();
     instructorsSlider();
     reviewsSlider();
     benefitsSlider();
