@@ -12,6 +12,5 @@ export const mapInit = () => {
 
     mapIframe.classList.add('is-shown');
     mapIframe.appendChild(iframe);
-
   }
 };
