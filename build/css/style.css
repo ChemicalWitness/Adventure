@@ -3238,7 +3238,8 @@ button,
 }
 @media (max-width: 767px) {
   .hero__slide-content > a {
-    width: 100%;
+    width: 55%;
+    min-width: 180px;
     padding: 17px;
     max-width: none;
   }
