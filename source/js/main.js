@@ -34,12 +34,12 @@ window.addEventListener('DOMContentLoaded', () => {
     checkWindow();
     findVideo();
     initAudio();
-    const form = new Form();
-    window.form = form;
-    form.init();
     instructorsSlider();
     reviewsSlider();
     benefitsSlider();
+    const form = new Form();
+    window.form = form;
+    form.init();
     gallerySlider();
     mapInit();
   });
