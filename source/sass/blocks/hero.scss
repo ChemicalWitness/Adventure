@@ -302,7 +302,7 @@
   transform: translateY(-158px) translateX(75px);
 
   @include vp-1199 {
-    transform: translateY(-15px) translateX(20px);
+    transform: translateY(-15px) translateX(0);
   }
 }
 
