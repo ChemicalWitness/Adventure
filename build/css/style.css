@@ -1217,14 +1217,6 @@ button.swiper-pagination-bullet {
   src: url("../fonts/montserrat-800.woff2") format("woff2");
   src: url("../fonts/montserrat-800.woff") format("woff");
 }
-@font-face {
-  font-style: normal;
-  font-weight: 300;
-  font-family: "Gotham Pro";
-  font-display: swap;
-  src: url("../fonts/gotham-pro-300.woff2") format("woff2");
-  src: url("../fonts/gotham-pro-300.woff") format("woff");
-}
 *,
 *::before,
 *::after {
