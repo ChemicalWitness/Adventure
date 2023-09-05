@@ -22,7 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   initMenu();
   toggleHandlerNav();
-  heroSlider();
 
 
   // Modules
@@ -35,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    heroSlider();
     checkWindow();
     findVideo();
     initAudio();
