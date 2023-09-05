@@ -14,10 +14,6 @@ export const upcomingToursSlider = () =>
         slidesPerView: 1,
         spaceBetween: 15,
       },
-      530: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-      },
       768: {
         slidesPerView: 2,
         spaceBetween: 18,
