@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initMenu();
   heroSlider();
   upcomingToursSlider();
   toggleHandlerNav();
@@ -36,7 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     checkWindow();
-    initMenu();
     findVideo();
     initAudio();
     instructorsSlider();
