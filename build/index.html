@@ -51,7 +51,9 @@
                 <a class="main-nav__link main-nav__link--header" href="#contacts">Контакты</a>
               </li>
             </ul>
-            <a class="main-nav__phone main-nav__phone--header" href="tel:+78007253232">8 800 725 32 32</a>
+            <div class="main-nav__phone-wrapper">
+              <a class="main-nav__phone main-nav__phone--header" href="tel:+78007253232">8 800 725 32 32</a>
+            </div>
           </nav>
         </div>
       </header>
@@ -893,14 +895,18 @@
                   </picture>
                 </div>
                 <div class="gallery__picture">
-                  <picture>
-                    <source type="image/webp" srcset="./img/gallery-5-desktop.webp 1x, ./img/gallery-5-desktop@2x.webp 2x" width="298" height="179">
-                    <img src="./img/gallery-5-desktop.png" loading="lazy" srcset="./img/gallery-5-desktop@2x.png 2x" width="298" height="179" alt="Спуск с ледяной горы">
-                  </picture>
-                  <picture>
-                    <source type="image/webp" srcset="./img/gallery-6-desktop.webp 1x, ./img/gallery-6-desktop@2x.webp 2x" width="298" height="265">
-                    <img src="./img/gallery-6-desktop.png" loading="lazy" srcset="./img/gallery-6-desktop@2x.png 2x" width="298" height="265" alt="Палатка среди ночи">
-                  </picture>
+                  <div class="gallery__picture-item gallery__picture-item--small">
+                    <picture>
+                      <source type="image/webp" srcset="./img/gallery-5-desktop.webp 1x, ./img/gallery-5-desktop@2x.webp 2x" width="298" height="179">
+                      <img src="./img/gallery-5-desktop.png" loading="lazy" srcset="./img/gallery-5-desktop@2x.png 2x" width="298" height="179" alt="Спуск с ледяной горы">
+                    </picture>
+                  </div>
+                  <div class="gallery__picture-item gallery__picture-item--big">
+                    <picture>
+                      <source type="image/webp" srcset="./img/gallery-6-desktop.webp 1x, ./img/gallery-6-desktop@2x.webp 2x" width="298" height="265">
+                      <img src="./img/gallery-6-desktop.png" loading="lazy" srcset="./img/gallery-6-desktop@2x.png 2x" width="298" height="265" alt="Палатка среди ночи">
+                    </picture>
+                  </div>
                 </div>
               </div>
 
@@ -912,14 +918,19 @@
                   </picture>
                 </div>
                 <div class="gallery__picture">
-                  <picture>
-                    <source type="image/webp" srcset="./img/gallery-2-desktop.webp 1x, ./img/gallery-2-desktop@2x.webp 2x" width="298" height="179">
-                    <img src="./img/gallery-2-desktop.png" loading="lazy" srcset="./img/gallery-2-desktop@2x.png 2x" width="298" height="179" alt="Компания у костра">
-                  </picture>
-                  <picture>
-                    <source type="image/webp" srcset="./img/gallery-3-desktop.webp 1x, ./img/gallery-3-desktop@2x.webp 2x" width="298" height="265">
-                    <img src="./img/gallery-3-desktop.png" loading="lazy" srcset="./img/gallery-3-desktop@2x.png 2x" width="298" height="265" alt="Компас на вершине горы">
-                  </picture>
+                  <div class="gallery__picture-item gallery__picture-item--small">
+                    <picture>
+                      <source type="image/webp" srcset="./img/gallery-2-desktop.webp 1x, ./img/gallery-2-desktop@2x.webp 2x" width="298" height="179">
+                      <img src="./img/gallery-2-desktop.png" loading="lazy" srcset="./img/gallery-2-desktop@2x.png 2x" width="298" height="179" alt="Компания у костра">
+                    </picture>
+                  </div>
+                  <div class="gallery__picture-item gallery__picture-item--big">
+                    <picture>
+                      <source type="image/webp" srcset="./img/gallery-3-desktop.webp 1x, ./img/gallery-3-desktop@2x.webp 2x" width="298" height="265">
+                      <img src="./img/gallery-3-desktop.png" loading="lazy" srcset="./img/gallery-3-desktop@2x.png 2x" width="298" height="265" alt="Компас на вершине горы">
+                    </picture>
+                  </div>
+
                 </div>
               </div>
 
@@ -971,22 +982,28 @@
                 <svg width="26" height="26">
                   <use href="./img/sprite.svg#phone"></use>
                 </svg>
-                <h3>Телефон</h3>
-                <a href="tel:89837454545">8 983 745 45 45</a>
+                <div class="contacts__list-item-wrapper">
+                  <h3>Телефон</h3>
+                  <a href="tel:89837454545">8 983 745 45 45</a>
+                </div>
               </li>
               <li class="contacts__list-item">
                 <svg width="26" height="26">
                   <use href="./img/sprite.svg#mail"></use>
                 </svg>
-                <h3>E-mail</h3>
-                <a href="mailto:info@lifetour.com">info@lifetour.com</a>
+                <div class="contacts__list-item-wrapper">
+                  <h3>E-mail</h3>
+                  <a href="mailto:info@lifetour.com">info@lifetour.com</a>
+                </div>
               </li>
               <li class="contacts__list-item">
                 <svg width="26" height="26">
                   <use href="./img/sprite.svg#pin"></use>
                 </svg>
-                <h3>Адрес</h3>
-                <a href="#">г. Москва, пр-т Мира, д.&nbsp;14, офис 101</a>
+                <div class="contacts__list-item-wrapper">
+                  <h3>Адрес</h3>
+                  <p>г. Москва, пр-т Мира, д.&nbsp;14, офис 101</p>
+                </div>
               </li>
             </ul>
             <div class="contacts__map-wrapper">
@@ -1032,7 +1049,9 @@
                 <a class="footer__nav-link" href="#contacts">Контакты</a>
               </li>
             </ul>
-            <a class="footer__phone" href="tel:+78007253232">8 800 725 32 32</a>
+            <div class="footer__phone-wrapper">
+              <a class="footer__phone" href="tel:+78007253232">8 800 725 32 32</a>
+            </div>
             <ul class="footer__social-list social-list">
               <li class="social-list__item">
                 <a class="social-list__link" href="#" aria-label="Ссылка на страницу в ВК">

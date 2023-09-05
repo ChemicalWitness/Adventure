@@ -5,12 +5,12 @@
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: 205px auto 175px;
-  padding-top: 30px;
+  grid-template-columns: 205px auto 160px;
+  padding-top: 27px;
 
   @include vp-1199 {
     grid-template-columns: 195px 1fr;
-    padding-top: 45px;
+    padding-top: 43px;
   }
 
   @include vp-767 {
@@ -60,8 +60,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-self: center;
-  gap: 32px;
-  padding-right: 20px;
 
   @include vp-1199 {
     padding-top: 0;
@@ -90,8 +88,10 @@
   line-height: 16px;
   font-weight: 400;
   border: 1px solid transparent;
+  padding-right: 30px;
 
   @include vp-1199 {
+    padding-right: 0;
     color: $color-main;
     font-size: 14px;
     line-height: 14px;
@@ -101,6 +101,10 @@
     padding: 5px;
     margin-bottom: 5px;
   }
+}
+
+.footer__nav-item:last-child .footer__nav-link {
+  padding-right: 0;
 }
 
 .footer__nav-link:hover {
@@ -119,6 +123,15 @@
 .footer__nav-link:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.footer__phone-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  justify-self: end;
+  padding-bottom: 3px;
 }
 
 .footer__phone {
@@ -164,7 +177,7 @@
   gap: 16px;
   justify-content: center;
   margin-top: 10px;
-  padding-right: 25px;
+  padding-right: 40px;
 
   @include vp-1199 {
     padding-right: 0;
@@ -189,12 +202,14 @@
   justify-self: center;
   margin-top: 20px;
   margin-bottom: 30px;
+  padding-right: 40px;
 
   font-size: 12px;
   line-height: 12px;
   font-weight: 300;
 
   @include vp-1199 {
+    padding-right: 0;
     grid-column: span 2;
   }
 

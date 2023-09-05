@@ -120,3 +120,17 @@
     height: 260px;
   }
 }
+
+.gallery__picture-item--small img {
+  @include vp-767 {
+    width: 172px;
+    height: 103px;
+  }
+}
+
+.gallery__picture-item--big img {
+  @include vp-767 {
+    width: 172px;
+    height: 153px;
+  }
+}

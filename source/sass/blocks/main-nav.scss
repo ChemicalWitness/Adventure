@@ -11,6 +11,7 @@
 
 .main-nav__toggle {
   display: none;
+  user-select: none;
 
   @include vp-1199 {
     display: block;
@@ -19,6 +20,7 @@
     margin-right: 100px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
   }
 
   @include vp-767 {
@@ -69,6 +71,13 @@
   @include vp-1199 {
     display: none;
     max-width: none;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    max-height: 300px;
+  }
+
+  @include vp-767 {
+    max-height: 250px;
   }
 }
 
@@ -109,6 +118,16 @@
   pointer-events: none;
 }
 
+.main-nav__phone-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include vp-767 {
+    grid-column: 2/3;
+    justify-self: end;
+  }
+}
+
 .main-nav__phone {
   display: block;
 
@@ -123,9 +142,6 @@
   }
 
   @include vp-767 {
-    grid-column: 2/3;
-    justify-self: end;
-
     font-size: 14px;
     line-height: 14px;
   }

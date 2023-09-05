@@ -65,7 +65,12 @@
       &:focus,
       &:active {
         border: 1px solid rgba(#1c3374, 1);
+
+        &::placeholder {
+          color: transparent;
+        }
       }
+
 
       &:disabled {
         opacity: 0.1;

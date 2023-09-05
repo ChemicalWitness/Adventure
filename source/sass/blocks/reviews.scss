@@ -73,13 +73,13 @@
 
   @include vp-1199 {
     padding-top: 27px;
-    margin-bottom: 42px;
+    margin-bottom: 53px;
     padding-left: 45px;
   }
 
   @include vp-767 {
-    margin-bottom: 40px;
     padding: 0 15px;
+    padding-bottom: 15px;
     padding-top: 12px;
   }
 }
@@ -102,12 +102,11 @@
 
   @include vp-767 {
     min-height: 466px;
-    grid-template-columns: none;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: auto;
+    display: grid;
     padding-right: 19px;
     padding-left: 19px;
-    gap: 13px;
+    gap: 0;
     max-width: none;
   }
 }

@@ -23,5 +23,5 @@ export const gallerySlider = () =>
         spaceBetween: 6,
       },
     },
-    loop: true,
+    loop: false,
   });

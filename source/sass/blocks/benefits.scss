@@ -48,10 +48,12 @@
 .benefits__wrapper h2 {
   position: relative;
   margin-bottom: 45px;
+  padding-left: 14px;
 
   text-align: center;
 
   @include vp-1199 {
+    padding: 0;
     margin-bottom: 47px;
   }
 
