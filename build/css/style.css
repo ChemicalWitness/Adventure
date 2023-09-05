@@ -2555,9 +2555,9 @@ button,
 }
 @media (max-width: 767px) {
   .main-nav--opened .main-nav__list {
-    top: 90px;
+    top: 93px;
     left: 0;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
   }
 }
 
@@ -2571,7 +2571,7 @@ button,
 @media (max-width: 767px) {
   .main-nav--opened .main-nav__link--header {
     margin-left: 15px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 }
 
