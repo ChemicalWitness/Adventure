@@ -125,12 +125,14 @@
   align-items: center;
   text-align: center;
   background-color: $color-default-white;
+  margin-right: 30px;
 
   @include vp-1199 {
     width: 324px;
     height: auto;
     padding: 30px 20px;
     min-height: 0;
+    margin-right: 0;
   }
 
   @include vp-767 {

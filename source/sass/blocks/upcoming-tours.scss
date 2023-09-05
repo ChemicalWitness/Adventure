@@ -167,14 +167,17 @@
   background-color: #1c3374;
   z-index: -2;
   height: auto;
+  margin-right: 30px;
 
   @include vp-1199 {
     width: 324px;
+    margin-right: 18px;
   }
 
   @include vp-767 {
     width: 100%;
     height: 100%;
+    margin-right: 15px;
   }
 }
 

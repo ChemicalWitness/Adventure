@@ -93,6 +93,7 @@
   max-width: 790px;
   height: auto;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  margin-right: 30px;
 
   @include vp-1199 {
     grid-template-columns: 186px 1fr;
@@ -108,5 +109,6 @@
     padding-left: 19px;
     gap: 0;
     max-width: none;
+    margin-right: 15px;
   }
 }
