@@ -20,9 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   mainNavMenu();
-  // initMenu();
   heroSlider();
-  // toggleHandlerNav();
 
   // Modules
   // ---------------------------------

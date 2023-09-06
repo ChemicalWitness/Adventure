@@ -158,18 +158,18 @@
   border: 1px solid transparent;
 }
 
-
-.contacts__list-item-wrapper a:hover {
-  border-bottom: 1px solid $color-main;
+.contacts__list-item-wrapper a:hover,
+.contacts__list-item-wrapper a:focus-visible {
+  color: #1c3374;
 }
 
 .contacts__list-item-wrapper a:active {
-  border: 1px solid transparent;
+  color: $color-additional-icon;
 }
 
-.contacts__list-item-wrapper a:focus-visible {
-  border: 1px solid $color-main;
-  outline: none;
+.contacts__list-item-wrapper a:disabled {
+  color: $color-additional-icon;
+  opacity: 0.1;
 }
 
 .contacts__list-item svg {

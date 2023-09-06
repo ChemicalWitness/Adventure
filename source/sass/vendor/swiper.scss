@@ -258,7 +258,6 @@
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: fit-content;
 
   @media(max-width:1199px) {
     bottom: 90px;
@@ -552,7 +551,7 @@ button.swiper-pagination-bullet {
   pointer-events: auto;
   visibility: visible;
 }
-.swiper-cube .swiper-slide-shadow-top,
+.swiper-cube .swiper-slide-shadow-top,g
 .swiper-cube .swiper-slide-shadow-bottom,
 .swiper-cube .swiper-slide-shadow-left,
 .swiper-cube .swiper-slide-shadow-right {

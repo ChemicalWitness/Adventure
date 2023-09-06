@@ -171,7 +171,7 @@
 
   @include vp-1199 {
     position: absolute;
-    top: 410px;
+    top: 420px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -181,7 +181,7 @@
 
   @include vp-767 {
     position: absolute;
-    top: 335px;
+    top: 345px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -283,7 +283,7 @@
   opacity: 0.1;
 }
 
-.main-nav--nojs .main-nav__list {
+.main-nav--nojs .main-nav__list-wrapper {
   @include vp-1199 {
     position: static;
     grid-column: 1/2;
@@ -292,13 +292,25 @@
     display: flex;
     flex-direction: column;
     gap: 26px;
-    max-height: 290px;
+    max-height: 300px;
+    width: 100%;
   }
 
   @include vp-767 {
-    padding-top: 28px;
+    padding-top: 0;
     grid-row: 3/4;
     gap: 22px;
+  }
+}
+
+.main-nav--nojs .main-nav__list-wrapper > .main-nav__list {
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    max-height: 300px;
   }
 }
 
@@ -317,7 +329,7 @@
   }
 }
 
-.main-nav--closed .main-nav__list {
+.main-nav--closed .main-nav__list-wrapper {
   @include vp-1199 {
     display: none;
   }
@@ -340,40 +352,61 @@
   pointer-events: none;
 }
 
-.main-nav--opened .main-nav__list {
+.main-nav--opened .main-nav__list-wrapper {
   @include vp-1199 {
     position: absolute;
-    top: 120px;
+    top: 80px;
     left: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: $color-default-white;
+    height: 100vh;
     gap: 0;
     padding-bottom: 50px;
     justify-content: start;
-    z-index: 10;
+    z-index: -1;
     visibility: visible;
-    max-height: 310px;
+    overflow: auto;
   }
 
   @include vp-767 {
-    top: 93px;
+    top: 53px;
     left: 0;
     padding-bottom: 33px;
   }
 }
 
+.main-nav--opened .main-nav__list-wrapper > .main-nav__list {
+  @include vp-1199 {
+    position: relative;
+    z-index: 3;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: $color-default-white;
+    max-height: none;
+    gap: 0;
+    padding-bottom: 50px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 35px;
+  }
+}
+
 .main-nav--opened .main-nav__link--header {
   @include vp-1199 {
-    margin-bottom: 14px;
     padding: 5px 0;
+    padding-bottom: 14px;
+    margin-bottom: 5px;
     margin-left: 45px;
   }
 
   @include vp-767 {
     margin-left: 15px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
