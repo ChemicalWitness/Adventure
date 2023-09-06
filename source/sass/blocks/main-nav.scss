@@ -364,7 +364,7 @@
     gap: 0;
     padding-bottom: 50px;
     justify-content: start;
-    z-index: -1;
+    z-index: 5;
     visibility: visible;
     overflow: auto;
   }
@@ -493,5 +493,12 @@
       top: 10px;
       left: 0;
     }
+  }
+}
+
+.main-nav--opened .main-nav__phone-wrapper {
+  @include vp-1199 {
+    position: relative;
+    z-index: 6;
   }
 }
