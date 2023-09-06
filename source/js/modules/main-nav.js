@@ -5,18 +5,18 @@ const body = document.querySelector('body');
 const mainNavLinks = document.querySelectorAll('.main-nav__link');
 const overlay = document.querySelector('.main-nav__overlay');
 
+export const initMenu = () => {
+  mainNav.classList.remove('main-nav--nojs');
+  header.classList.add('header--main-nav-closed');
+  mainNav.classList.add('main-nav--closed');
+};
+
 export const checkWindow = () => {
   window.addEventListener('resize', () => {
     if (window.innerWidth > 1200) {
       closeModal();
     }
   });
-};
-
-export const initMenu = () => {
-  mainNav.classList.remove('main-nav--nojs');
-  header.classList.add('header--main-nav-closed');
-  mainNav.classList.add('main-nav--closed');
 };
 
 export const toggleHandlerNav = () => {
