@@ -1258,7 +1258,7 @@ button.swiper-pagination-bullet {
   font-style: normal;
   font-weight: 500;
   font-family: "Montserrat";
-  font-display: optional;
+  font-display: swap;
   src: url("../fonts/montserrat-500.woff2") format("woff2");
   src: url("../fonts/montserrat-500.woff") format("woff");
 }
@@ -1267,7 +1267,7 @@ button.swiper-pagination-bullet {
   font-style: normal;
   font-weight: 600;
   font-family: "Montserrat";
-  font-display: optional;
+  font-display: swap;
   src: url("../fonts/montserrat-600.woff2") format("woff2");
   src: url("../fonts/montserrat-600.woff") format("woff");
 }
