@@ -203,7 +203,6 @@
   @include vp-1199 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 50px;
     justify-items: center;
     background-color: $color-default-white;
     padding-bottom: 50px;
@@ -218,7 +217,9 @@
 
 .main-nav--nojs .main-nav__logo {
   @include vp-1199 {
-    justify-self: start;
+    justify-self: end;
+    grid-column: 3/4;
+    grid-row: 1/2;
   }
 
   @include vp-767 {
@@ -248,17 +249,23 @@
   }
 }
 
-.main-nav--nojs .main-nav__phone {
+.main-nav--nojs .main-nav__phone-wrapper {
   @include vp-1199 {
     color: $color-default-black;
     grid-column: 3/4;
-    grid-row: 1/2;
+    grid-row: 2/3;
     justify-self: end;
   }
 
   @include vp-767 {
     grid-column: 2/3;
     grid-row: 2/3;
+  }
+}
+
+.main-nav--nojs .main-nav__phone-wrapper > a {
+  @include vp-1199 {
+    color: inherit;
   }
 }
 
@@ -280,11 +287,12 @@
   @include vp-1199 {
     position: static;
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
     justify-self: start;
     display: flex;
     flex-direction: column;
     gap: 26px;
+    max-height: 290px;
   }
 
   @include vp-767 {
@@ -346,6 +354,7 @@
     justify-content: start;
     z-index: 10;
     visibility: visible;
+    max-height: 310px;
   }
 
   @include vp-767 {

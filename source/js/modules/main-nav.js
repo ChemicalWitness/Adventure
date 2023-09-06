@@ -4,19 +4,25 @@ const mainNavToggle = document.querySelector('.main-nav__toggle');
 const body = document.querySelector('body');
 const mainNavLinks = document.querySelectorAll('.main-nav__link');
 const overlay = document.querySelector('.main-nav__overlay');
+const heroSlider = document.querySelector('.hero__slider');
 
 export const initMenu = () => {
   mainNav.classList.remove('main-nav--nojs');
+  heroSlider.classList.remove('hero__slider--nojs');
   header.classList.add('header--main-nav-closed');
   mainNav.classList.add('main-nav--closed');
 };
 
 export const checkWindow = () => {
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 1200) {
-      closeModal();
-    }
-  });
+  if (mainNav.classList.contains('main-nav--nojs')) {
+    return;
+  } else {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1200) {
+        closeModal();
+      }
+    });
+  }
 };
 
 export const toggleHandlerNav = () => {

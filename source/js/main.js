@@ -23,8 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
   heroSlider();
   toggleHandlerNav();
 
-
-
   // Modules
   // ---------------------------------
 

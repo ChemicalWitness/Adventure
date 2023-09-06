@@ -3946,7 +3946,6 @@ button,
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 50px;
     justify-items: center;
     background-color: #ffffff;
     padding-bottom: 50px;
@@ -3954,8 +3953,14 @@ button,
   }
 
   .main-nav--nojs .main-nav__logo {
-    -ms-grid-column-align: start;
-    justify-self: start;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
   }
 
   .main-nav--nojs svg {
@@ -3972,16 +3977,20 @@ button,
     justify-self: center;
   }
 
-  .main-nav--nojs .main-nav__phone {
+  .main-nav--nojs .main-nav__phone-wrapper {
     color: #000000;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-row-span: 1;
-    grid-row: 1/2;
+    grid-row: 2/3;
     -ms-grid-column-align: end;
     justify-self: end;
+  }
+
+  .main-nav--nojs .main-nav__phone-wrapper > a {
+    color: inherit;
   }
 
   .main-nav--nojs .main-nav__list {
@@ -3989,9 +3998,9 @@ button,
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-row-span: 1;
-    grid-row: 2/3;
+    grid-row: 3/4;
     -ms-grid-column-align: start;
     justify-self: start;
     display: -webkit-box;
@@ -4002,6 +4011,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 26px;
+    max-height: 290px;
   }
 
   .main-nav--nojs .main-nav__link--header,
@@ -4035,6 +4045,7 @@ button,
     justify-content: start;
     z-index: 10;
     visibility: visible;
+    max-height: 310px;
   }
 
   .main-nav--opened .main-nav__link--header {
@@ -4103,6 +4114,10 @@ button,
 
   .hero__slider {
     margin-top: -171px;
+  }
+
+  .hero__slider--nojs {
+    margin-top: 0;
   }
 
   .hero__slide {
@@ -4817,7 +4832,7 @@ button,
     grid-column: 2/3;
   }
 
-  .main-nav--nojs .main-nav__phone {
+  .main-nav--nojs .main-nav__phone-wrapper {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -4932,6 +4947,10 @@ button,
 
   .hero__slider {
     margin-top: -160px;
+  }
+
+  .hero__slider--nojs {
+    margin-top: 0;
   }
 
   .hero__slide {
