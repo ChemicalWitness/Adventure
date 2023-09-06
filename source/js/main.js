@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {checkWindow, initMenu, toggleHandlerNav} from './modules/main-nav';
+import {mainNavMenu} from './modules/main-nav';
 import {heroSlider} from './modules/hero';
 import {findVideo} from './modules/video';
 import {upcomingToursSlider} from './modules/upcoming-tours-slider';
@@ -19,9 +19,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  initMenu();
+  mainNavMenu();
+  // initMenu();
   heroSlider();
-  toggleHandlerNav();
+  // toggleHandlerNav();
 
   // Modules
   // ---------------------------------
@@ -29,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    checkWindow();
+    // checkWindow();
     upcomingToursSlider();
     findVideo();
     initAudio();
