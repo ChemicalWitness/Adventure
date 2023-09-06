@@ -23,7 +23,7 @@
   font-weight: 500;
   font-family: "Montserrat";
 
-  font-display: swap;
+  font-display: optional;
   src: url("../fonts/montserrat-500.woff2") format("woff2");
   src: url("../fonts/montserrat-500.woff") format("woff");
 }
@@ -33,7 +33,7 @@
   font-weight: 600;
   font-family: "Montserrat";
 
-  font-display: swap;
+  font-display: optional;
   src: url("../fonts/montserrat-600.woff2") format("woff2");
   src: url("../fonts/montserrat-600.woff") format("woff");
 }
